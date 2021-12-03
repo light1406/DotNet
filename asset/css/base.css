@@ -1,0 +1,41 @@
+:root {
+    /* --bg-1-color: #ebd9ca; */
+    --bg-sale: #cc6b04;
+    --main-color: #000000;
+    --text-color: #ffffff;
+    --text-name: #e76a6a;
+    --text-hover: #000000;
+    --text-price: #b6b6b6;
+    /* --white-color: #ffff; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    width: 1100px !important;
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#app,
+#header,
+#slider,
+#app-content,
+#footer {
+    position: relative;
+}
