@@ -1,0 +1,95 @@
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.content{
+    width: 1100px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop-info{
+    width: 48%;
+    margin-right: 10px;
+}
+
+.shop-info iframe{
+    width: 100%;
+}
+
+.user-info{
+    width: 48%;
+}
+
+.user-info .user-info-tite{
+    text-transform: uppercase;
+}
+
+.user-info .form-element{
+    margin-top: 15px;
+}
+
+.user-info .form-element input[type="text"]{
+    margin-top: 5px;
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.user-info .form-element textarea:focus{
+    outline: none;
+    box-shadow: 0px 1px 2px 1px #dedede;
+}
+
+.user-info .form-element textarea{
+    width: 96%;
+    padding: 10px;
+    height: 75px;
+    margin-top: 5px;
+    border: 1px solid #e0e0e0;
+    resize: none;
+}
+
+.user-info .form-element input[type="submit"]{
+    float: right;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.user-info .form-element input[type="submit"]:hover{
+    background-color: #5e5e5e;
+}
+
+.big-tilte{
+    font-size: 20px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+    .content{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .shop-info{
+        width: 96%;
+    }
+    .user-info{
+        width: 96%;
+    }
+}

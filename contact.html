@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Watch</title>
+    <link rel="stylesheet" href="asset/css/contact.css">
 </head>
 <body>
-$END$
+<div id="app">
+    <div class="content">
+        <div class="shop-info">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2156930380556!2d106.78957711524139!3d10.871192760408977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276398969f7b%3A0x9672b7efd0893fc4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOw7RuZyBMw6JtIFRwLiBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1638716477224!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="user-info">
+            <div class="user-info-tite"><span class="big-tilte text-bold">Thông tin người dùng</span></div>
+            <form>
+                <div class="form-element">
+                    <label class="text-bold" for="fname">Họ và tên</label><br/>
+                    <input type="text" id="fname" placeholder="Họ và tên của bạn">
+                </div>
+                <div class="form-element">
+                    <label class="text-bold" for="email">Email</label><br/>
+                    <input type="text" id="email" placeholder="Nhập địa chỉ email của bạn">
+                </div>
+                <div class="form-element">
+                    <label class="text-bold" for="message">Nhận xét</label><br/>
+                    <textarea id="message" placeholder="Nhập ý kiến đóng góp"></textarea>
+                </div>
+                <div class="form-element">
+                    <input type="submit" value="Gửi">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>

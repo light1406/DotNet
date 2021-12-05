@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Watch</title>
+    <link rel="stylesheet" href="asset/css/check_out.css">
 </head>
 <body>
-$END$
+
+<div id="app">
+    <!-- CONTENT -->
+    <div class="content">
+        <!--Thong tin nguoi nhan-->
+        <div class="receiver">
+            <div class="recevier-title">
+                <span class="big-tilte title-gray">Thanh toán và giao hàng</span>
+            </div>
+            <form class="receiver-info">
+                <div class="receiver-info-element">
+                    <label for="fname">Họ và tên</label><br/>
+                    <input type="text" id="fname" name="fname" placeholder="Họ và tên của bạn"><br/>
+                </div>
+                <div class="receiver-info-element">
+                    <label for="address">Địa chỉ</label><br/>
+                    <input type="text" id="address" name="address" placeholder="Địa chỉ"><br/>
+                </div>
+                <div class="receiver-info-element">
+                    <label for="phone">Số điện thoại</label><br/>
+                    <input type="text" id="phone" name="phone" placeholder="Số điện thoại"><br/>
+                </div>
+                <div class="receiver-info-element">
+                    <label for="email">Email</label><br/>
+                    <input type="text" id="email" name="email" placeholder="Email"><br/>
+                </div>
+                <div class="receiver-info-element">
+                    <label>Ghi chú</label><br/>
+                    <textarea id="message" placeholder="Ghi chú về đơn hàng"></textarea>
+                </div>
+            </form>
+        </div>
+        <!--Thong tin hoa don-->
+        <div class="bill">
+            <div class="bill-title">
+                <span class="big-tilte title-gray">Đơn hàng của bạn</span>
+            </div>
+            <div class="bill-info">
+                <table class="bill-info-tbl">
+                    <tr>
+                        <th class="left-col text-gray text-bold">Sản phẩm</th>
+                        <th class="right-col text-gray">Tạm tính</th>
+                    </tr>
+                    <tr>
+                        <td class="left-col text-gray">Seiko SNK809K2 <span class="qty text-bold">× 1</span></td>
+                        <td class="right-col text-bold">2.400.000 đ</td>
+                    </tr>
+                    <tr>
+                        <td class="left-col text-gray text-bold">Tạm tính</td>
+                        <td class="right-col text-bold">2.400.000 đ</td>
+                    </tr>
+                    <tr>
+                        <td class="left-col text-gray text-bold">Giao hàng</td>
+                        <td class="right-col">Giao hàng miễn phí</td>
+                    </tr>
+                    <tr>
+                        <td class="left-col text-gray text-bold">Tổng</td>
+                        <td class="right-col text-bold">2.400.000 đ</td>
+                    </tr>
+                    <tr>
+                        <td class="left-col text-gray text-bold">Phương thức thanh toán</td>
+                        <td class="right-col text-bold">Trực tiếp</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bill-button">
+                <button class="btn_1">Đặt mua</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

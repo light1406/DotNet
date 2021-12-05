@@ -1,0 +1,161 @@
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#app{
+    width: 100%;
+}
+
+.content{
+    width: 1100px;
+    margin: 20px auto;
+}
+
+/*RECEIVER*/
+.content .receiver{
+    width: 45%;
+    border-top: 2px solid #b6b6b6;
+    margin: 0 15px;
+    float: left;
+    clear: right;
+}
+
+.content .receiver .receiver-info-element{
+    margin-top: 15px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.content .receiver .recevier-title{
+    margin-top: 20px;
+}
+
+.content .receiver label{
+    font-weight: bold;
+}
+
+.content .receiver input[type="text"]{
+    width: 98%;
+    height: 35px;
+    margin-top: 5px;
+    border: 1px solid #e5e5e5;
+    padding-left: 10px;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.content .receiver input[type="text"]:focus{
+    outline: none;
+    box-shadow: 1px 1px 1px 1px #dadada;
+}
+
+.content .receiver #message{
+    width: 96%;
+    height: 125px;
+    resize: none;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.content .receiver #message:focus{
+    outline: none;
+    box-shadow: 1px 1px 1px 1px #dadada;
+}
+
+/*BILL*/
+.content .bill{
+    width: 40%;
+    margin: 0px 15px;
+    float: left;
+    border: 3px solid #000000;
+    padding: 20px;
+}
+
+.content .bill .bill-info{
+    margin-top: 15px;
+}
+
+.content .bill .bill-info .bill-info-tbl{
+    width: 100%;
+}
+
+th{
+    border-bottom: 2px solid #b6b6b6;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td{
+    border-bottom: 1px solid #dadada;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bill-info .left-col{
+    text-align: left;
+}
+
+.bill-info .right-col{
+    text-align: right;
+}
+
+.bill .bill-button{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.bill .bill-button .btn_1{
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    cursor: pointer;
+}
+
+.bill .bill-button .btn_1:hover{
+    background-color: #484848;
+}
+
+/*BASE*/
+.big-tilte{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.title-gray{
+    color: #4d4d4d;
+}
+
+.text-gray{
+    color: #8c8b8b;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1100px){
+    .content{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .content .receiver{
+        float: none;
+        width: 95%;
+    }
+
+    .content .bill{
+        float: none;
+        width: 88%;
+    }
+}
