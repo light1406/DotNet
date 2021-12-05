@@ -1,0 +1,30 @@
+.container {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+
+.container .header-bg {
+    display: flex;
+    justify-content: center;
+}
+
+.container .brand .brand__item img {
+    width: 200px;
+    height: auto;
+}
+
+.container .brand__title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .brand {
+    display: flex;
+    justify-content: center;
+}
+
+.container .brand .brand__item {
+    margin: 0 20px;
+}
