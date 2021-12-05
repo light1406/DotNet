@@ -6,6 +6,12 @@
     --text-name: #e76a6a;
     --text-hover: #000000;
     --text-price: #b6b6b6;
+    --button-buy: #dd3333;
+    --button-buy-hover: #8a2424e1;
+    --link-category: #DA1818;
+    --product-social: rgb(136, 135, 135);
+    --update-cart: #f38383;
+    --gray-title: #7a7777;
     /* --white-color: #ffff; */
 }
 
@@ -16,7 +22,6 @@
 }
 
 html {
-    width: 1100px !important;
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
