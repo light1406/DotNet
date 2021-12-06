@@ -35,7 +35,7 @@
     width: 51px;
     height: 40px;
     cursor: pointer;
-    background-color: var(--bg-sale);
+    background-color: var(--bg-main);
     outline: none;
     border: none;
 }
@@ -51,7 +51,7 @@
 }
 
 .header-customer--user a i {
-    color: var(--bg-sale);
+    color: var(--bg-main);
     font-size: 2.5rem;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .header-customer--cart a i {
-    color: var(--bg-sale);
+    color: var(--bg-main);
     font-size: 2.5rem;
     margin-left: 35px;
 }
@@ -141,7 +141,7 @@
 }
 
 .nav-item a {
-    color: var(--text-price);
+    color: var(--text-main);
     display: inline-flex;
     font-weight: 700;
     font-size: 1.6rem;
@@ -173,7 +173,7 @@
     content: "";
     position: absolute;
     border-width: 13px;
-    border-color: transparent transparent rgb(224, 224, 224) transparent;
+    border-color: transparent transparent #f5f5f5 transparent;
     border-style: solid;
     top: -11%;
     left: 49px;
@@ -192,7 +192,7 @@
 }
 
 .menu-child__list {
-    background-color: rgb(224, 224, 224);
+    background-color: #f5f5f5;
     border-radius: 11px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -210,7 +210,7 @@
 
 .menu-child__list--item a:hover {
     color: #000;
-    background-color: #f5f5f5;
+    color: var(--bg-main);
 }
 
 .border--top {

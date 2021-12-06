@@ -1,24 +1,26 @@
 :root {
-    /* --bg-1-color: #ebd9ca; */
+    --bg-1-color: #ff4742;
     --bg-sale: #cc6b04;
     --main-color: #000000;
-    --text-color: #ffffff;
     --text-name: #e76a6a;
     --text-hover: #000000;
-    --text-price: #b6b6b6;
     --button-buy: #dd3333;
     --button-buy-hover: #8a2424e1;
-    --link-category: #DA1818;
+    --link-category: #da1818;
     --product-social: rgb(136, 135, 135);
     --update-cart: #f38383;
-    --gray-title: #7a7777;
-    /* --white-color: #ffff; */
+    /* MAIN  */
+    --bg-main: #b10202;
+    --text-main: #979797;
+    --text-hover: #000;
+    --text-color: #ffffff;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    color: var(--bg-main);
 }
 
 html {
@@ -31,6 +33,7 @@ html {
 
 a {
     text-decoration: none;
+    user-select: none;
 }
 
 li {

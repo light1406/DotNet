@@ -1,6 +1,7 @@
 .bg-breadcrumb {
     margin-top: 15px;
-    background-color: black;
+    /* background-color: black; */
+    background-color: #b10202;
 }
 
 .container-breadcrumb {
@@ -14,7 +15,7 @@
 .breadcrumb-header__heading,
 .breadcrumb-link p,
 .breadcrumb-link p span {
-    color: var(--text-color);
+    color: white;
     font-size: 1.8rem;
     font-weight: bold;
     padding-top: 20px;
@@ -131,7 +132,7 @@
     background-size: cover;
 }
 
-.product-item__name {
+.product-item__name a {
     text-align: center;
     font-size: 1.6rem;
     overflow: hidden;
@@ -141,6 +142,7 @@
     -webkit-line-clamp: 2;
     font-weight: normal;
     margin: 0 25px;
+    color: #000;
 }
 
 .product-item__price {
@@ -153,7 +155,7 @@
 .product-item__price--old-price {
     font-size: 1.8rem;
     text-decoration: line-through;
-    color: var(--text-price);
+    color: var(--text-main);
     margin-left: 50px;
 }
 

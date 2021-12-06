@@ -23,6 +23,7 @@
 
 .footer-item a {
     font-size: 1.6rem;
+    color: #000;
 }
 
 #scroll-to-top {
@@ -61,4 +62,5 @@
 
 .footer-item-moblie a {
     font-size: 1.9rem;
+    color: #000;
 }
