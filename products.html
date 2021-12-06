@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet" />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/products.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+
+    <!-- JS  -->
+    <script src="./asset/js/filter.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+    <!-- HEADER START  -->
+    <header>
+        <div class="container-header">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./asset/image/logo.png" alt=""></a>
+            </div>
+
+            <div class="header-search">
+                <input type="text" placeholder="Search">
+                <button class="btn-search">
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </button>
+            </div>
+            <div class="header-customer">
+                <div class="header-customer--user">
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="menu-user">
+                        <ul class="menu-user__list  ">
+                            <li class="menu-user__list--item  ">
+                                <a class="" href="./login">Login</a>
+                            </li>
+                            <li class="menu-user__list--item">
+                                <a href="./register">Register</a>
+                            </li>
+                            <li class="menu-user__list--item ">
+                                <a href="./index.html">Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="header-customer--cart">
+                    <a href="">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBLIE + TABLET  -->
+
+        <div class="header-moblie-tablet">
+            <div class="header-bar ">
+                <i class="fas fa-bars js-open-nav"></i>
+            </div>
+
+            <div class="header-logo">
+                <a href="">
+                    <img src="./asset/image/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="header-customer">
+                <div class="header-customer__user">
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+                <div class="header-customer__cart">
+                    <a href="">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="nav-mobile-tablet ">
+            <div class="nav-list-mobile-tablet">
+                <ul class="nav-list-flex-mobile-tablet">
+                    <div class="nav-mobile-tabletr-search">
+                        <input type="text" placeholder="Search">
+                        <button class="btn-search">
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <li class="nav-item-mobile-tablet">
+                        <a href="">HOME</a>
+                    </li>
+                    <li class="nav-item-mobile-tablet">
+                        <a href="">ABOUT</a>
+                    </li>
+                    <li class="nav-item-mobile-tablet js-open-brand">
+                        <a>BRAND</a>
+                        <i class="fas fa-chevron-down"></i>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
+                        </li>
+                    </li>
+                    <li class="nav-item-mobile-tablet">
+                        <a href="">WATCH MEN</a>
+                    </li>
+                    <li class="nav-item-mobile-tablet">
+                        <a href="">WATCH WOMEN</a>
+                    </li>
+
+                    <li class="nav-item-mobile-tablet js-open-accessory">
+                        <a>ACCSESORY</a>
+                        <i class="fas fa-chevron-down"></i>
+                        <li class="menu-child-mobile-tablet2">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet2">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet2">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet2">
+                            <a href="">SUBMENU </a>
+                        </li>
+                    </li>
+                    <li class="nav-item-mobile-tablet">
+                        <a href="./contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="nav-btn-moblie-tablet">
+                    <button class="btn-moblie-tablet-exit">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBLIE + TABLET  -->
+
+        <div class="container-navigation">
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item"><a href="./about.html">ABOUT</a></li>
+                    <li class="nav-item">
+                        <a>BRAND
+                        </a>
+                        <div class="menu-child">
+                            <ul class="menu-child__list">
+                                <li class="menu-child__list--item ">
+                                    <a class="border--top" href="">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Numquam quod reprehenderit similique quis eveniet excepturi aut tenetur
+                                        fuga doloremque quas ab sed quibusdam at maiores asperiores quia, amet impedit
+                                        ipsa.</a>
+                                </li>
+                                <li class="menu-child__list--item">
+                                    <a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente minima
+                                        aut provident inventore quod sit maiores, voluptas optio totam ipsam quas odio
+                                        tempora praesentium fugiat velit eveniet corporis quisquam sint?</a>
+                                </li>
+                                <li class="menu-child__list--item">
+                                    <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi id
+                                        ratione doloremque sit accusantium est deleniti illum iste velit tempora nam
+                                        molestiae, ipsa facilis dolorem maiores. Itaque exercitationem sapiente
+                                        voluptatum.</a>
+                                </li>
+                                <li class="menu-child__list--item">
+                                    <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, impedit.
+                                        Quae in vitae placeat nihil nostrum temporibus consectetur officiis ex, culpa
+                                        vel odit. Architecto harum maiores ut expedita, recusandae enim? Orien</a>
+                                </li>
+                                <li class="menu-child__list--item">
+                                    <a class="border--bottom" href="">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Aliquid qui alias corporis officia id, laborum hic? Dolor modi
+                                        totam esse omnis, iusto tenetur maxime alias sequi fugiat eveniet impedit
+                                        culpa.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="./product.html">WATCH MEN</a></li>
+                    <li class="nav-item"><a href="./product.html">WATCH WOMEN</a></li>
+                    <li class="nav-item">
+                        <a>ACCSESORY</a>
+                        <div class="menu-child">
+                            <ul class="menu-child__list">
+                                <li class="menu-child__list--item">
+                                    <a class="border--top" href="">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Cupiditate expedita ipsum aliquid nobis labore nam nesciunt minus ipsa
+                                        nisi, quae eaque beatae vero at ad repellendus quasi sit rerum iusto. </a>
+                                </li>
+                                <li class="menu-child__list--item">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                                        necessitatibus ut! Odio illo modi repudiandae aperiam. Temporibus dicta nemo
+                                        facere placeat alias mollitia, explicabo dolore, pariatur at reiciendis laborum
+                                        ratione.</a>
+                                </li>
+                                <li class="menu-child__list--item">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt itaque
+                                        pariatur praesentium hic et dolorum voluptates quaerat atque dolore blanditiis
+                                        qui, enim repellat dignissimos veniam quae! Quis, non rem. Id.</a>
+                                </li>
+                                <li class="menu-child__list--item">
+                                    <a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam laborum
+                                        tempora deserunt voluptatum, at atque adipisci natus aliquid earum optio ex,
+                                        voluptas commodi recusandae, ab expedita? Saepe debitis libero nostrum. </a>
+                                </li>
+                                <li class="menu-child__list--item">
+                                    <a class="border--bottom" href="">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Nisi voluptatum sit suscipit consectetur ex fuga dolore ipsa
+                                        nam exercitationem consequuntur quisquam, dolorem id quasi quas quam, qui atque
+                                        corporis ipsam? </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END  -->
+
+    <!-- BREADCRUMB START -->
+    <div class="bg-breadcrumb">
+        <div class="container-breadcrumb ">
+            <div class="breadcrumb-header">
+                <h2 class="breadcrumb-header__heading">WATCH MEN</h2>
+            </div>
+            <div class="breadcrumb-link">
+                <p>HOME <span>/ WATCH MEN</span></p>
+
+            </div>
+            <div class="breadcrumb-filter">
+                <a class="js-show-filter">
+                    <i class="fas fa-list"></i> SORT BY PRICE
+                </a>
+
+                <div class="modal">
+                    <div class="filter-price">
+                        <ul class="list-price">
+                            <li class="list-price__item">
+                                <a href="">From $50 To $100</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $100 To $400</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $400 To $1000</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $1000 To $1500</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $1500 To $2500</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $2500 To $3000</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">Up $3000</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-btn">
+                        <button class="btn-exit">
+                            <a><i class="fas fa-times"></i></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMB END -->
+
+    <!-- PRODUCT START  -->
+    <div class="container-product-list">
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p1.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p2.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p3.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p4.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p1.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p2.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p3.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p4.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p1.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p2.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p3.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <a href="">
+                <div class="product-item__img" style="background-image: url(./asset/image/product/p4.png);"></div>
+            </a>
+            <h4 class="product-item__name">
+                <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum at temporibus illo
+                    quibusdam sequi neque distinctio quae in id officiis quis, vero itaque praesentium ex dolores
+                    consequuntur voluptate molestiae.</a>
+            </h4>
+            <div class="product-item__price">
+                <span class="product-item__price--old-price">$2324</span>
+                <span class="product-item__price--new-price">$1964</span>
+            </div>
+            <div class="product-item__sale-label">
+                <span class="product-item__sale-label--percent">35%</span>
+            </div>
+        </div>
+        <div class="pagination">
+            <ul class="pagination-list">
+                <li class="pagination-item ">
+                    <a href="">&laquo;</a>
+                </li>
+                <li class="pagination-item  ">
+                    <a href="" class="active-pagination">1</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="">4</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="">5</a>
+                </li>
+                <li class="pagination-item">
+                    <a href=""> &raquo;</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+    <!-- PRODUCT END  -->
+
+
+    <!-- FOOTER START  -->
+    <footer>
+        <div class="container-footer">
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">Contact</h3>
+                    <li class="footer-item">
+                        <a href="">
+                            +84 333 666 999</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">
+                            watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">
+                            Facebook</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">
+                            Intagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">Product</h3>
+                    <li class="footer-item">
+                        <a href="">Watch Men</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Watch Women</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Watch Child</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Accessory</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">My Account</h3>
+                    <li class="footer-item">
+                        <a href="">Login</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Register Account</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Forgot Password</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Shopping Cart</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">Infomation Store</h3>
+                    <li class="footer-item">
+                        <a href="">
+                            Address: Linh Trung Ward, Thu Duc, Ho Chi Minh City</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Website: https://galle.vn</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Fanpage: watchstore</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-btn">
+            <button id="scroll-to-top">
+                <i class="far fa-caret-square-up"></i>
+            </button>
+        </div>
+
+        <!-- MOBLIE FOOTER  -->
+
+        <div class="container-footer-moblie">
+            <div class="footer-col-moblie">
+                <h4 class="footer-col-moblie__heading">Contact</h4>
+                <ul>
+                    <li class="footer-item-moblie">
+                        <a href="">+84 333 666 999</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Facebook </a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Intagram </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col-moblie">
+                <h4 class="footer-col-moblie__heading">Product</h4>
+                <ul>
+                    <li class="footer-item-moblie">
+                        <a href="">+84 333 666 999</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Facebook </a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Intagram </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col-moblie">
+                <h4 class="footer-col-moblie__heading">My Account</h4>
+                <ul>
+                    <li class="footer-item-moblie">
+                        <a href="">+84 333 666 999</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Facebook </a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Intagram </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col-moblie">
+                <h4 class="footer-col-moblie__heading">Infomation Contact</h4>
+                <ul>
+                    <li class="footer-item-moblie">
+                        <a href="">+84 333 666 999</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Facebook </a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Intagram </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- MOBLIE FOOTER  -->
+    <!-- FOOTER END -->
+
+</body>
+
+</html>
