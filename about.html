@@ -15,15 +15,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet" />
 
+    <!-- CSS  -->
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/header.css">
     <link rel="stylesheet" href="./asset/css/footer.css">
     <link rel="stylesheet" href="./asset/css/products.css">
     <link rel="stylesheet" href="./asset/css/about.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
-    <link rel="stylesheet" href="./asset/css/product.css">
 
 
+    <!-- JS  -->
+    <script src="./asset/js/filter.js"></script>
 
 
 
@@ -59,7 +61,7 @@
                                 <a href="./register">Register</a>
                             </li>
                             <li class="menu-user__list--item ">
-                                <a href="border--bottom">Logout</a>
+                                <a href="./index.html">Logout</a>
                             </li>
 
                         </ul>
@@ -104,10 +106,7 @@
 
 
         <div class="nav-mobile-tablet ">
-
-
             <div class="nav-list-mobile-tablet">
-
                 <ul class="nav-list-flex-mobile-tablet">
                     <div class="nav-mobile-tabletr-search">
                         <input type="text" placeholder="Search">
@@ -118,55 +117,55 @@
                         </button>
                     </div>
                     <li class="nav-item-mobile-tablet">
-                        <a href="">HOME</a>
+                        <a href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item-mobile-tablet">
-                        <a href="">ABOUT</a>
+                        <a href="./about.html">ABOUT</a>
                     </li>
-                    <li class="nav-item-mobile-tablet">
-                        <a href="">BRAND</a>
+                    <li class="nav-item-mobile-tablet js-open-brand">
+                        <a>BRAND</a>
                         <i class="fas fa-chevron-down"></i>
-
-
-
-
-
-                        <li class="menu-child-mobile-tablet">
-                            <a href="">danh</a>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
                         </li>
-                        <li class="menu-child-mobile-tablet">
-                            <a href="">danh</a>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
                         </li>
-                        <li class="menu-child-mobile-tablet">
-                            <a href="">danh</a>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
                         </li>
-                        <li class="menu-child-mobile-tablet">
-                            <a href="">danh</a>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
                         </li>
-                        <li class="menu-child-mobile-tablet">
-                            <a href="">danh</a>
+                        <li class="menu-child-mobile-tablet1">
+                            <a href="">SUBMENU </a>
                         </li>
-
-
-
-
-
-                    </li>
-
-                    <li class="nav-item-mobile-tablet">
-                        <a href="">WATCH MEN</a>
                     </li>
                     <li class="nav-item-mobile-tablet">
-                        <a href="">WATCH WOMEN</a>
+                        <a href="./products.html">WATCH MEN</a>
                     </li>
                     <li class="nav-item-mobile-tablet">
-                        <a href="">ACCSESORY</a>
+                        <a href="./products.html">WATCH WOMEN</a>
+                    </li>
+
+                    <li class="nav-item-mobile-tablet js-open-accessory">
+                        <a>ACCSESORY</a>
                         <i class="fas fa-chevron-down"></i>
-
-
+                        <li class="menu-child-mobile-tablet2">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet2">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet2">
+                            <a href="">SUBMENU </a>
+                        </li>
+                        <li class="menu-child-mobile-tablet2">
+                            <a href="">SUBMENU </a>
+                        </li>
                     </li>
                     <li class="nav-item-mobile-tablet">
-                        <a href="">CONTACT</a>
+                        <a href="./contact.html">CONTACT</a>
                     </li>
                 </ul>
                 <div class="nav-btn-moblie-tablet">
@@ -174,26 +173,20 @@
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
-
-
-
             </div>
-
-
         </div>
 
         <!-- MOBLIE + TABLET  -->
 
         <div class="container-navigation">
-
             <div class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="">HOME</a>
+                        <a href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item"><a href="./about.html">ABOUT</a></li>
                     <li class="nav-item">
-                        <a href="">BRAND
+                        <a>BRAND
                         </a>
                         <div class="menu-child">
                             <ul class="menu-child__list">
@@ -228,10 +221,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="./product.html">WATCH MEN</a></li>
-                    <li class="nav-item"><a href="./product.html">WATCH WOMEN</a></li>
+                    <li class="nav-item"><a href="./products.html">WATCH MEN</a></li>
+                    <li class="nav-item"><a href="./products.html">WATCH WOMEN</a></li>
                     <li class="nav-item">
-                        <a href="./product.html">ACCSESORY</a>
+                        <a>ACCSESORY</a>
                         <div class="menu-child">
                             <ul class="menu-child__list">
                                 <li class="menu-child__list--item">
@@ -270,7 +263,57 @@
         </div>
     </header>
     <!-- HEADER END  -->
+    <!-- BREADCRUMB START -->
+    <div class="bg-breadcrumb">
+        <div class="container-breadcrumb ">
+            <div class="breadcrumb-header">
+                <h2 class="breadcrumb-header__heading">WATCH MEN</h2>
+            </div>
+            <div class="breadcrumb-link">
+                <p>HOME <span>/ WATCH MEN</span></p>
 
+            </div>
+            <div class="breadcrumb-filter">
+                <a class="js-show-filter">
+                    <i class="fas fa-list"></i> SORT BY PRICE
+                </a>
+
+                <div class="modal">
+                    <div class="filter-price">
+                        <ul class="list-price">
+                            <li class="list-price__item">
+                                <a href="">From $50 To $100</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $100 To $400</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $400 To $1000</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $1000 To $1500</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $1500 To $2500</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $2500 To $3000</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">Up $3000</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-btn">
+                        <button class="btn-exit">
+                            <a><i class="fas fa-times"></i></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMB END -->
     <!-- ABOUT START  -->
     <div class="container-about">
         <div class="about-header">
@@ -371,7 +414,6 @@
 
                 </ul>
             </div>
-            <script src="./asset/js/filter.js"></script>
         </div>
         <div class="footer-btn">
             <button id="scroll-to-top">
@@ -461,41 +503,6 @@
 
     <!-- FOOTER END -->
 
-    <script>
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scroll-to-top").style.display = "block";
-            } else {
-                document.getElementById("scroll-to-top").style.display = "none";
-            }
-        }
-        document.getElementById('scroll-to-top').addEventListener("click", function() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        });
-    </script>
-
-    <script>
-        const btnOpen = document.querySelector(".js-open-nav");
-        const btnCloses = document.querySelector(".btn-moblie-tablet-exit");
-        const nav = document.querySelector(".nav-mobile-tablet");
-
-        function openNav() {
-            nav.classList.add("open");
-        }
-
-        function closeNav() {
-            nav.classList.remove("open");
-        }
-
-        btnOpen.addEventListener("click", openNav);
-        btnCloses.addEventListener("click", closeNav);
-    </script>
 </body>
 
 </html>

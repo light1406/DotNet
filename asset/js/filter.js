@@ -59,7 +59,7 @@ window.addEventListener("load", function() {
     const menuChilds1 = document.querySelectorAll(".menu-child-mobile-tablet1");
     const menuChilds2 = document.querySelectorAll(".menu-child-mobile-tablet2");
     const iconDown = document.querySelector(".js-open-accessory i");
-    console.log(iconDown);
+
     var count = 0;
     var countAccessory = 0;
 

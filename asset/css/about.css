@@ -12,7 +12,7 @@
 .about-text__paragraph {
     font-size: 1.6rem;
     line-height: 3rem;
-    color: var(--text-price);
+    color: var(--text-main);
     margin-bottom: 5px;
     text-align: justify;
     margin: 0 30px;
