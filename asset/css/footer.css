@@ -64,3 +64,11 @@
     font-size: 1.9rem;
     color: #000;
 }
+
+footer {
+    border-top: 1px solid blueviolet;
+}
+
+.container-footer {
+    margin-top: 20px;
+}
