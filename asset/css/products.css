@@ -42,15 +42,15 @@
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
-    opacity: 0;
+    /* opacity: 0; */
     transition: 0.3s linear;
     visibility: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: translateX(0%);
+    left: -100%;
 }
 
 .openFilter {
-    opacity: 1;
+    left: 0;
     visibility: visible;
 }
 
