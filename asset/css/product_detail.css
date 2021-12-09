@@ -5,7 +5,6 @@
 }
 
 .contain-product {
-    max-width: 1100px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -15,15 +14,30 @@
 
 .contain-product__image__intro {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
 }
+
+@media screen and (max-width: 785px) {
+    .contain-product__image__intro {
+        display: flex;
+        flex-wrap: wrap;
+        word-wrap: 100%;
+    }
+  }
 
 .contain-product__image {
     position: relative;
+    height: auto;
+    text-align: center;
+  
 }
 
 .contain-product__image__img {
     width: 100%;
+    text-align: center;
+
 }
 
 .contain-product__image__logo-sale {
@@ -63,8 +77,8 @@
 .contain-product__intro__text {
     margin: 10px 0;
     font-size: 1.8rem;
-    max-width: 400px;
     width: 100%;
+    max-width: 450px;
 }
 
 .contain-product__intro__form {
@@ -115,15 +129,12 @@
     margin: 10px 0;
 }
 
-.parameter-insurance__title--outer {
-    font-size: 16px;
-}
-
 .product__parameter-insurance {
+    margin: 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -159,17 +170,27 @@
     width: 100%;
     height: auto;
     font-size: 1.5rem;
-    margin: 20px 0;
+    margin: 20px 0px;
+    display: grid;
+    place-items: center;
+
+}
+
+.product__policy__ul {
+ margin: 10 50px;
 }
 
 .product__policy__duration-policy {
     color: red;
 }
 
+
 .product__policy__table {
     margin: 50px 0;
-    width: 100%;
+    width: 80%;
     height: auto;
+    display: grid;
+    place-items: center; 
 }
 
 .product__policy__table table {
