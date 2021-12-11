@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet" />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header_chau.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/products.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/css/register.css">
+
+
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <!-- JS  -->
+    <!-- <script src="./asset/js/filter.js"></script> -->
+    <script src="./asset/js/header.js"></script>
+
+
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="header">
+        <div class="menu-mobile">
+            <div class="close-menu-mobile">
+                <span><i class="fa fa-close"></i></span>
+            </div>
+            <div class="search-mobile">
+                <input type="text" id="search-input-mobile" name="search-input" placeholder="Search">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+            <hr />
+            <ul class="p-menu">
+                <li><a href="./indexChanh.html">HOME </a></li>
+                <li><a href="./aboutChanh.html">ABOUT </a></li>
+                <li>
+                    <div class="toggle-icon">
+                        <span><i class="fa fa-angle-down"></i></span>
+                    </div>
+                    <a>BRAND </a>
+                    <ul class="submenu">
+                        <li><a href="#">Orient</a></li>
+                        <li><a href="#">Seiko</a></li>
+                        <li><a href="#">Casio</a></li>
+                        <li><a href="#">Srwatch</a></li>
+                        <li><a href="#">Bentley</a></li>
+                        <li><a href="#">Op</a></li>
+                        <li><a href="#">Citizen</a></li>
+                    </ul>
+                </li>
+                <li><a href="./productChanh.html">WATCH MEN </a></li>
+                <li><a href="./productChanh.html">WATCH WOMEN </a></li>
+                <li><a href="./contactChanh.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="nav">
+            <div class="active-menu-mobile">
+                <a><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="asset/image/logo.png" width="150" /></a>
+            </div>
+            <div class="search">
+                <input type="text" id="search-input" name="search-input" placeholder="Search">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="btns-customer">
+                <ul class="btns">
+                    <li class="user">
+                        <a class="user-icon"><i class="fa fa-user"></i></a>
+                        <ul class="btns-customer-submenu">
+                            <li><a href="./loginChanh.html">Login</a></li>
+                            <li><a href="./register.html">Register</a></li>
+                            <li><a href="./forgotpassword.html">Log out</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="shop-cart"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="p-menu">
+                <li><a href="./indexChanh.html">HOME </a></li>
+                <li><a href="./aboutChanh.html">ABOUT</a></li>
+                <li>
+                    <a>BRAND</a>
+                    <ul class="submenu">
+                        <li><a href="#">Orient</a></li>
+                        <li><a href="#">Seiko</a></li>
+                        <li><a href="#">Casio</a></li>
+                        <li><a href="#">Srwatch</a></li>
+                        <li><a href="#">Bentley</a></li>
+                        <li><a href="#">Op</a></li>
+                        <li><a href="#">Citizen</a></li>
+                    </ul>
+                </li>
+                <li><a href="./productChanh.html">WATCH MEN </a></li>
+                <li><a href="./productChanh.html">WATCH WOMEN </a></li>
+                <li><a href="./contactChanh.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--HEADER-->
+
+
+
+
+    <!-- BREADCRUMB START -->
+    <div class="bg-breadcrumb">
+        <div class="container-breadcrumb ">
+            <div class="breadcrumb-header">
+                <h2 class="breadcrumb-header__heading">REGISTER ACCOUNT</h2>
+            </div>
+            <div class="breadcrumb-link">
+                <p>HOME <span> / REGISTER ACCOUNT</span></p>
+
+            </div>
+            <div class="breadcrumb-filter">
+                <a class="js-show-filter">
+                    <i class="fas fa-list"></i> SORT BY PRICE
+                </a>
+
+                <div class="modal">
+                    <div class="filter-price">
+                        <ul class="list-price">
+                            <li class="list-price__item">
+                                <a href="">From $50 To $100</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $100 To $400</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $400 To $1000</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $1000 To $1500</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $1500 To $2500</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">From $2500 To $3000</a>
+                            </li>
+                            <li class="list-price__item">
+                                <a href="">Up $3000</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-btn">
+                        <button class="btn-exit">
+                            <a><i class="fas fa-times"></i></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMB END -->
+
+
+
+    <div class="container-register">
+        <div class="register-left">
+            <div class="register-left__img">
+                <img src="./asset/image/product/p1.png" alt="">
+            </div>
+        </div>
+        <div class="register-right">
+            <div class="register-right__header">
+                <h1 class="register-right__header--heading">Welcome Back!</h1>
+                <p class="register-right__header--des">Please use the account you have been give to register!</p>
+            </div>
+            <div class="register-right__form">
+                <form action="">
+                    <div class="register-input">
+                        <label>Email</label>
+                        <input type="text">
+                    </div>
+                    <div class="register-input">
+                        <label>Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="register-input">
+                        <label>Confirm Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="register-input">
+                        <label>Address</label>
+                        <input type="text">
+                    </div>
+                    <div class="register-input">
+                        <label>Phone</label>
+                        <input type="text">
+                    </div>
+                    <div class="register-select">
+                        <div class="remember">
+                            <input type="checkbox">
+                            <label for="">Remember me</label>
+                        </div>
+                        <a href="">Forgot password</a>
+                    </div>
+
+                </form>
+            </div>
+            <div class="register-right__btn">
+                <button>
+                    <a href="">REGISTER</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER START  -->
+    <footer>
+        <div class="container-footer">
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">Contact</h3>
+                    <li class="footer-item">
+                        <a href="">
+                            +84 333 666 999</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">
+                            watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">
+                            Facebook</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">
+                            Intagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">Product</h3>
+                    <li class="footer-item">
+                        <a href="">Watch Men</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Watch Women</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Watch Child</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Accessory</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">My Account</h3>
+                    <li class="footer-item">
+                        <a href="">register</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Register Account</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Forgot Password</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Shopping Cart</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">Infomation Store</h3>
+                    <li class="footer-item">
+                        <a href="">
+                            Address: Linh Trung Ward, Thu Duc, Ho Chi Minh City</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Website: https://galle.vn</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Fanpage: watchstore</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-btn">
+            <button id="scroll-to-top">
+                <i class="far fa-caret-square-up"></i>
+            </button>
+        </div>
+
+        <!-- MOBLIE FOOTER  -->
+
+        <div class="container-footer-moblie">
+            <div class="footer-col-moblie">
+                <h4 class="footer-col-moblie__heading">Contact</h4>
+                <ul>
+                    <li class="footer-item-moblie">
+                        <a href="">+84 333 666 999</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Facebook </a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Intagram </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col-moblie">
+                <h4 class="footer-col-moblie__heading">Product</h4>
+                <ul>
+                    <li class="footer-item-moblie">
+                        <a href="">+84 333 666 999</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Facebook </a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Intagram </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col-moblie">
+                <h4 class="footer-col-moblie__heading">My Account</h4>
+                <ul>
+                    <li class="footer-item-moblie">
+                        <a href="">+84 333 666 999</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Facebook </a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Intagram </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col-moblie">
+                <h4 class="footer-col-moblie__heading">Infomation Contact</h4>
+                <ul>
+                    <li class="footer-item-moblie">
+                        <a href="">+84 333 666 999</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">watchstore@gmail.com</a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Facebook </a>
+                    </li>
+                    <li class="footer-item-moblie">
+                        <a href="">Intagram </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- MOBLIE FOOTER  -->
+    <!-- FOOTER END -->
+</body>
+
+</html>

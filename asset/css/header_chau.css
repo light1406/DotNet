@@ -1,17 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 /*HEADER*/
+
 .header {
     width: 1100px;
     margin: auto;
@@ -26,8 +14,7 @@ a {
     display: none;
 }
 
-.header .nav .logo {
-}
+.header .nav .logo {}
 
 .header .search {
     position: relative;
@@ -40,7 +27,7 @@ a {
     height: 40px;
     padding: 0 10px;
     border: 1px solid #b6b6b6;
-    box-shadow: 0px 2px 2px 0px #d2d2d2;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .header .search input[type="text"]:focus {
@@ -51,17 +38,19 @@ a {
     display: block;
     position: absolute;
     width: 8%;
-    height: 42px;
-    right: 0px;
+    height: 40px;
+    right: 23px;
     top: 15px;
     border: none;
     background-color: #a80000;
     color: #ffffff;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .header .search .search-btn i {
     font-size: 20px;
+    color: white;
 }
 
 .header .nav .btns-customer .btns {
@@ -76,7 +65,7 @@ a {
 }
 
 .header .nav .btns-customer .btns .user:hover .btns-customer-submenu {
-    display: block;
+    visibility: visible;
 }
 
 .header .nav .btns-customer .btns a i {
@@ -85,29 +74,31 @@ a {
     transition: 0.4s;
 }
 
-.header .nav .btns-customer .btns li:hover a i{
+.header .nav .btns-customer .btns li:hover a i {
     color: #f88509;
 }
 
 .header .nav .btns-customer .btns li .btns-customer-submenu {
     position: absolute;
-    width: 75px;
-    padding: 0px 15px;
+    width: 106px;
+    padding: 0px 10px;
     top: 35px;
-    left: -15px;
+    left: -25px;
     background-color: #ce3434;
     border-radius: 5px;
-    display: none;
+    z-index: 1;
+    visibility: hidden;
+    transition: 0.3s linear;
 }
 
-.header .nav .btns-customer .btns li .btns-customer-submenu:before {
+.header .nav .btns-customer .btns li .btns-customer-submenu::before {
     content: "";
     position: absolute;
-    border-width: 10px;
+    border-width: 13px;
     border-color: transparent transparent #ce3434;
     border-style: solid;
-    top: -21%;
-    left: 15px;
+    top: -17%;
+    left: 24px;
 }
 
 .header .nav .btns-customer .btns li .btns-customer-submenu li {
@@ -116,34 +107,36 @@ a {
 
 .header .nav .btns-customer .btns li .btns-customer-submenu li a {
     color: #ffffff;
+    font-size: 1.6rem;
 }
 
-.header .nav .btns-customer .btns li .btns-customer-submenu li:hover a{
+.header .nav .btns-customer .btns li .btns-customer-submenu li:hover a {
     color: #fca54c;
 }
 
-.header .menu > ul {
+.header .menu>ul {
     display: flex;
     justify-content: center;
 }
 
-.header .menu > ul > li {
-    margin: 15px;
+.header .menu>ul>li {
+    margin: 20px;
 }
 
-.header .menu > ul > li > a {
-    font-size: 20px;
+.header .menu>ul>li>a {
+    font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #7e7e7e;
+    transition: 0.2s linear;
 }
 
-.header .menu > ul > li:hover > a{
-    color: #b6b6b6;
+.header .menu>ul>li:hover>a {
+    color: #eee8e2;
 }
 
-.header .menu > ul > li .submenu{
-    display: none;
+.header .menu>ul>li .submenu {
+    visibility: hidden;
     position: absolute;
     width: 200px;
     box-shadow: 0px 3px 4px 1px #7e7e7e;
@@ -151,108 +144,131 @@ a {
     border-radius: 5px;
     padding: 10px;
     margin-top: 15px;
+    z-index: 999999;
+    opacity: 0;
+    transition: 0.3s linear;
 }
 
-.header .menu > ul > li .submenu:after{
+.header .menu>ul>li .submenu::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 84%;
+    height: 24px;
+    top: -8%;
+    left: 0;
+    cursor: pointer;
+}
+
+.header .menu>ul>li .submenu::after {
     content: "";
     position: absolute;
     border-width: 15px;
-    border-color: transparent transparent #e8e8e8;
+    border-color: transparent transparent #eee8e2 transparent;
     border-style: solid;
-    top:-13%;
-    left: 30px;
+    top: -11%;
+    left: 20px;
+    cursor: pointer;
 }
 
-.header .menu > ul > li .submenu li{
+.header .menu>ul>li .submenu li {
     margin: 10px 20px;
     cursor: pointer;
 }
 
-.header .menu > ul > li .submenu li a{
-    font-size: 16px;
+.header .menu>ul>li .submenu li a {
+    font-size: 1.6rem;
     text-transform: uppercase;
     color: #8f8f8f;
+    font-weight: bold;
 }
 
-.header .menu > ul > li .submenu li:hover a{
+.header .menu>ul>li .submenu li:hover a {
     color: #dcdcdc;
 }
 
-.header .menu> ul > li:hover .submenu{
-    display: block;
+.header .menu>ul>li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
 }
 
+
 /*MOBILE*/
-.header .menu-mobile{
+
+.header .menu-mobile {
     position: absolute;
     left: -400px;
     width: 330px;
     height: 100%;
-    background-color: #930000;
-    z-index: 99;
+    background-color: var(--bg-main);
+    z-index: 1;
     transition: 0.4s;
 }
 
-.header .menu-mobile .close-menu-mobile{
+.header .menu-mobile .close-menu-mobile {
     position: absolute;
     top: 10px;
     right: 15px;
     cursor: pointer;
 }
 
-.header .menu-mobile .close-menu-mobile span i{
+.header .menu-mobile .close-menu-mobile span i {
     color: #ffffff;
     font-size: 20px;
 }
 
-.header .menu-mobile .close-menu-mobile:hover span i{
+.header .menu-mobile .close-menu-mobile:hover span i {
     color: #b6b6b6;
 }
 
-.header .menu-mobile .search-mobile{
+.header .menu-mobile .search-mobile {
     position: relative;
     margin: 50px 30px 35px;
 }
 
-.header .menu-mobile .search-mobile input{
+.header .menu-mobile .search-mobile input {
     width: 75%;
-    height: 30px;
-    padding:0 10px;
+    height: 36px;
+    padding: 0 10px;
+    color: black;
+    font-size: 1.6rem;
 }
-.header .menu-mobile .search-mobile input:focus{
+
+.header .menu-mobile .search-mobile input:focus {
     outline: none;
 }
 
-.header .menu-mobile .search-mobile .search-btn{
+.header .menu-mobile .search-mobile .search-btn {
     display: block;
     position: absolute;
-    top: 1px;
-    right: 0;
+    top: 0%;
+    right: 9%;
     width: 44px;
-    height: 32px;
+    height: 35px;
     border: none;
-    background-color: #ffad00;
+    background-color: rgb(255, 173, 0);
     cursor: pointer;
 }
 
-.header .menu-mobile .search-mobile .search-btn:hover{
+.header .menu-mobile .search-mobile .search-btn:hover {
     background-color: #ffba1a;
 }
 
-.header .menu-mobile .search-mobile .search-btn i{
+.header .menu-mobile .search-mobile .search-btn i {
     color: #ffffff;
+    font-size: 1.6rem;
 }
 
-.header .menu-mobile .p-menu{
+.header .menu-mobile .p-menu {
     padding-top: 30px;
 }
 
-.header .menu-mobile .p-menu > li{
+.header .menu-mobile .p-menu>li {
     padding: 10px 0px 10px 30px;
     cursor: pointer;
 }
 
-.header .menu-mobile .p-menu > li > a{
+.header .menu-mobile .p-menu>li>a {
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -260,50 +276,51 @@ a {
     user-select: none;
 }
 
-.header .menu-mobile .p-menu > li:hover{
+.header .menu-mobile .p-menu>li:hover {
     background-color: #b22a00;
 }
 
-.header .menu-mobile .p-menu > li:hover > a{
+.header .menu-mobile .p-menu>li:hover>a {
     color: #ff942e;
 }
 
-.header .menu-mobile .p-menu > li .submenu{
+.header .menu-mobile .p-menu>li .submenu {
     display: none;
     padding: 10px 20px;
     transition: 0.4s;
 }
 
-.header .menu-mobile .p-menu > li .submenu li{
+.header .menu-mobile .p-menu>li .submenu li {
     padding: 5px 0px;
 }
 
-.header .menu-mobile .p-menu > li .submenu li a{
+.header .menu-mobile .p-menu>li .submenu li a {
     color: #ffffff;
     font-size: 18px;
     user-select: none;
 }
 
-.header .menu-mobile .p-menu > li .submenu li:hover a{
+.header .menu-mobile .p-menu>li .submenu li:hover a {
     color: #eaa055;
 }
 
-.header .menu-mobile .p-menu .toggle-icon{
+.header .menu-mobile .p-menu .toggle-icon {
     position: absolute;
     right: 10px;
 }
 
-.header .menu-mobile .p-menu .toggle-icon span i{
+.header .menu-mobile .p-menu .toggle-icon span i {
     font-size: 20px;
     color: #ffffff;
 }
 
+
 /*REPONSIVE*/
+
 @media screen and (max-width: 1100px) {
     .header {
         width: 100%;
     }
-
     .header .search {
         width: 60%;
     }
@@ -316,16 +333,13 @@ a {
         margin-left: 20px;
         cursor: pointer;
     }
-
     .header .nav .active-menu-mobile a i {
         font-size: 27px;
     }
-
     .header .search {
         display: none;
     }
-
-    .header .menu{
+    .header .menu {
         display: none;
     }
 }
