@@ -49,3 +49,52 @@
     letter-spacing: 2px;
     border: 1px solid #dddddd;
 }
+
+
+/* TABLET  */
+
+
+/* @media (min-width: 740px) and (max-width: 1023px) {
+    .container-register {
+        width: 100%;
+    }
+    .register-left {
+        display: none;
+    }
+    .register-right {
+        margin: auto;
+    }
+} */
+
+
+/* MOBILE  */
+
+@media (max-width: 739px) {
+    .login-right {
+        width: 70%;
+    }
+    .login-right__header--heading {
+        font-size: 2rem;
+    }
+    .login-right__btn button {
+        font-size: 1.6rem;
+    }
+    .login-select {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container-login {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+    .login-left {
+        display: none;
+    }
+    .login-right {
+        margin: auto;
+    }
+}
