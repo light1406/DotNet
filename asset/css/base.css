@@ -40,6 +40,15 @@ li {
     list-style: none;
 }
 
+input,
+textarea {
+    font-size: 1.6rem;
+}
+
+button {
+    cursor: pointer;
+}
+
 #app,
 #header,
 #slider,

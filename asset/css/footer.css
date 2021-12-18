@@ -68,3 +68,37 @@
 .container-footer {
     margin-top: 20px;
 }
+
+
+/* TABLET  */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container-footer {
+        margin-top: 50px;
+    }
+}
+
+
+/* MOBILE  */
+
+@media (max-width: 739px) {
+    .container-footer {
+        width: 100%;
+        display: flex;
+        /* margin: 100px auto 10px auto; */
+        flex-direction: column;
+        margin: 0;
+        padding: 0 30px;
+        overflow: hidden;
+    }
+    .footer-col {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer-col__heading {
+        font-size: 1.8rem;
+    }
+}

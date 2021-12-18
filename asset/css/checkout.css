@@ -35,10 +35,11 @@
     outline-color: #dddddd;
     border: 1px solid #dddddd;
     font-family: "Poppins", sans-serif;
+    border-radius: 5px;
 }
 
 .checkout-right {
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     width: 50%;
     padding: 55px 25px;
     border-radius: 5px;
@@ -72,4 +73,40 @@
     margin-top: 20px;
     outline-color: #dddddd;
     border: 1px solid #dddddd;
+}
+
+@media (max-width: 1023px) {
+    .container-checkout {
+        width: 100%;
+        margin: 50px 0;
+        padding: 0px 30px;
+        overflow-x: hidden;
+        flex-direction: column;
+    }
+    .register-left {
+        display: none;
+    }
+    .checkout-left__form--input input,
+    .checkout-left__form--input textarea,
+    .checkout-right,
+    .checkout-left {
+        margin: auto;
+        width: 100%;
+    }
+    .checkout-right {
+        margin-bottom: 50px;
+    }
+    @media (max-width: 739px) {
+        .checkout-left__header--heading,
+        .checkout-right__header--heading,
+        .checkout-right__bill--title span,
+        .checkout-right__bill--title span,
+        .checkout-left__header--heading,
+        .checkout-right__header--heading,
+        .checkout-right__bill--title span,
+        .checkout-left__form--input label,
+        .checkout-right__bill--btn button {
+            font-size: 1.4rem;
+        }
+    }
 }
