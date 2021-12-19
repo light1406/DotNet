@@ -49,6 +49,22 @@ button {
     cursor: pointer;
 }
 
+.fa-facebook-square {
+    color: rgb(31, 130, 223);
+}
+
+.fa-twitter {
+    color: rgb(56, 101, 184);
+}
+
+.fa-instagram {
+    color: rgb(199, 136, 53);
+}
+
+.fa-youtube {
+    color: rgb(223, 68, 68);
+}
+
 #app,
 #header,
 #slider,

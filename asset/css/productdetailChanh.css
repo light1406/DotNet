@@ -29,7 +29,7 @@
 
 .details-right__header--des {
     font-size: 1.6rem;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 30px;
     margin-top: 15px;
 }
@@ -126,4 +126,71 @@
 
 .similar-product__heading {
     font-size: 2.8rem;
+}
+
+@media (max-width: 1023px) {
+    .container-details {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        flex-direction: column;
+    }
+    .details-left,
+    .details-right {
+        flex-direction: column-reverse;
+        margin: 10px 30px;
+    }
+    .details--left__img--main {
+        text-align: center;
+    }
+    .details--left__img-list {
+        flex-direction: row;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .container-info {
+        width: 100%;
+        flex-direction: column;
+    }
+    .insurance-info {
+        justify-content: flex-start;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .info-left,
+    .info-right {
+        margin: 0 30px;
+    }
+    .similar-product {
+        /* margin: 0 30px; */
+    }
+}
+
+
+/* MOBILE  */
+
+@media (max-width: 739px) {
+    .details--left__img--main img {
+        width: 50%;
+    }
+    .details--left__img-list__item img {
+        width: 70%;
+    }
+    .details--left__img-list {
+        text-align: center;
+    }
+    .details-right__header--name-product,
+    .details-right__price-new,
+    .details-right__price-old,
+    .details-right__social i,
+    .info-header__heading,
+    .similar-product__heading {
+        font-size: 2rem;
+    }
+    .insurance-text,
+    .insurance-text-info,
+    .details-right__btn button {
+        font-size: 1.6rem;
+    }
 }

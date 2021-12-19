@@ -18,18 +18,6 @@
     font-size: 2.5rem;
 }
 
-.contact-left__social i.fa-facebook-square {
-    color: rgb(31, 130, 223);
-}
-
-.contact-left__social i.fa-twitter {
-    color: rgb(56, 101, 184);
-}
-
-.contact-left__social i.fa-instagram {
-    color: rgb(199, 136, 53);
-}
-
 .contact-right__header--heading {
     font-size: 3.2rem;
     margin-bottom: 15px;
@@ -81,4 +69,31 @@
     font-weight: bold;
     border: 1px solid #dddddd;
     border-radius: 10px;
+}
+
+@media (max-width: 1023px) {
+    .container-contact {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        flex-direction: column-reverse;
+    }
+    .contact-left__background img {
+        display: none;
+    }
+    .contact-right {
+        margin: 50px 30px 0 30px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 739px) {
+    .contact-right__btn button {
+        padding: 10px 50px;
+        font-size: 1.6rem;
+    }
+    .contact-left {
+        margin-bottom: 50px;
+    }
 }
