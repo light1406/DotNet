@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER</title>
-
+    <title>CART</title>
     <!-- FONT AWESOME  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -20,8 +19,16 @@
     <link rel="stylesheet" href="./asset/css/headers.css">
     <link rel="stylesheet" href="./asset/css/footer.css">
     <link rel="stylesheet" href="./asset/css/products.css">
-    <link rel="stylesheet" href="./asset/css/register.css">
+    <link rel="stylesheet" href="./asset/css/cart.css">
     <link rel="shortcut icon" href="./asset/image/icons/favicon.ico" type="image/x-icon" />
+
+
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <!-- JS  -->
+    <script src="./asset/js/header.js"></script>
 
 </head>
 
@@ -45,7 +52,7 @@
                     <div class="toggle-icon">
                         <span><i class="fa fa-angle-down"></i></span>
                     </div>
-                    <a>BRAND </a>
+                    <a href="./product.html">BRAND </a>
                     <ul class="submenu">
                         <li><a href="#">Orient</a></li>
                         <li><a href="#">Casio</a></li>
@@ -111,17 +118,14 @@
 
     <!--HEADER-->
 
-
-
-
     <!-- BREADCRUMB START -->
     <div class="bg-breadcrumb">
         <div class="container-breadcrumb ">
             <div class="breadcrumb-header">
-                <h2 class="breadcrumb-header__heading">REGISTER ACCOUNT</h2>
+                <h2 class="breadcrumb-header__heading">CART</h2>
             </div>
             <div class="breadcrumb-link">
-                <p>HOME <span> / REGISTER ACCOUNT</span></p>
+                <p>HOME <span>/ CART </span></p>
 
             </div>
             <div class="breadcrumb-filter">
@@ -166,60 +170,97 @@
     </div>
     <!-- BREADCRUMB END -->
 
+    <!-- START CART  -->
+    <div class="container-cart">
+        <div class="cart-list">
+            <div class="cart-list__item">
+                <div class="cart-btn-select">
+                    <input type="checkbox">
+                </div>
+                <div class="cart-list__item--img">
+                    <a href="">
+                        <img src="./asset/image/product/cckt01_1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart-list__item--name">
+                    <a href=""> CHRONOGRAPH TITANIUM BLUE</a>
+                </div>
+                <div class="cart-list__item--quantity">
+                    <input type="number" min="1" max="20" value="1">
+                </div>
+                <div class="cart-list__item--price">
+                    <span>$159.354</span>
+                </div>
+                <div class="cart-btn-remove">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
 
+            </div>
+            <div class="cart-list__item">
+                <div class="cart-btn-select">
+                    <input type="checkbox">
+                </div>
+                <div class="cart-list__item--img">
+                    <a href="">
+                        <img src="./asset/image/product/cckt06_1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart-list__item--name">
+                    <a href=""> CHRONOGRAPH TITANIUM BLUE</a>
+                </div>
+                <div class="cart-list__item--quantity">
+                    <input type="number" min="1" max="20" value="1">
+                </div>
+                <div class="cart-list__item--price">
+                    <span>$159.354</span>
+                </div>
+                <div class="cart-btn-remove">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
 
-    <div class="container-register">
-        <div class="register-left">
-            <div class="register-left__img">
-                <img src="./asset/image/background/bg-form.jpg" alt="">
+            </div>
+            <div class="cart-list__item">
+                <div class="cart-btn-select">
+                    <input type="checkbox">
+                </div>
+                <div class="cart-list__item--img">
+                    <a href="">
+                        <img src="./asset/image/product/cckt27_1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart-list__item--name">
+                    <a href=""> CHRONOGRAPH TITANIUM BLUE</a>
+                </div>
+                <div class="cart-list__item--quantity">
+                    <input type="number" min="1" max="20" value="1">
+                </div>
+                <div class="cart-list__item--price">
+                    <span>$159.354</span>
+                </div>
+                <div class="cart-btn-remove">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+
             </div>
         </div>
-        <div class="register-right">
-            <div class="register-right__header">
-                <h1 class="register-right__header--heading">Welcome Back!</h1>
-                <p class="register-right__header--des">Please use the account you have been give to register!</p>
+        <div class="cart-text-total">
+            <p>Total <span>$999.159</span></p>
+        </div>
+        <div class="container-btn-cart">
+            <div class="cart-btn-back">
+                <button>
+                    <a href="">Back</a>
+                </button>
             </div>
-            <div class="register-right__form">
-                <form action="" method="post">
-                    <p class="warning">Complete Full Infomation, Please !</p>
-                    <div class="register-input">
-                        <label>Email</label>
-                        <input type="text" name="email">
-                    </div>
-                    <div class="register-input">
-                        <label>Password</label>
-                        <input type="password">
-                    </div>
-                    <div class="register-input">
-                        <label>Confirm Password</label>
-                        <input type="password" name="password">
-                    </div>
-                    <div class="register-input">
-                        <label>Address</label>
-                        <input type="text" name="address">
-                    </div>
-                    <div class="register-input">
-                        <label>Phone</label>
-                        <input type="text" name="phone">
-                    </div>
-                    <div class="register-select">
-                        <div class="remember">
-                            <input type="checkbox">
-                            <label for="">Remember me</label>
-                        </div>
-                        <a href="">Forgot password</a>
-                    </div>
-                    <div class="register-right__btn">
-                        <button type="submit">
-                            <a href="">REGISTER</a>
-                        </button>
-                    </div>
-                </form>
+            <div class="cart-btn-checkout">
+                <button>
+                    <a href="">Continue Checkout</a>
+                </button>
             </div>
-
         </div>
     </div>
 
+    <!-- END CART  -->
 
     <!-- FOOTER START  -->
     <footer>
@@ -300,7 +341,7 @@
         </div>
         <div class="footer-btn">
             <button id="scroll-to-top">
-                <i class="far fa-caret-square-up"></i>
+                <i class="fas fa-angle-up"></i>
             </button>
         </div>
 
@@ -383,14 +424,6 @@
 
     </footer>
     <!-- FOOTER END -->
-
-
-
-
-
-    <!--JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="./asset/js/header.js"></script>
     <script src="./asset/js/scroll.js"></script>
 
 </body>

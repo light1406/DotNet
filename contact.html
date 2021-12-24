@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER</title>
+    <title>CONTACT | CCKT</title>
 
     <!-- FONT AWESOME  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./asset/css/headers.css">
     <link rel="stylesheet" href="./asset/css/footer.css">
     <link rel="stylesheet" href="./asset/css/products.css">
-    <link rel="stylesheet" href="./asset/css/register.css">
+    <link rel="stylesheet" href="./asset/css/contact.css">
     <link rel="shortcut icon" href="./asset/image/icons/favicon.ico" type="image/x-icon" />
 
 </head>
@@ -45,7 +45,7 @@
                     <div class="toggle-icon">
                         <span><i class="fa fa-angle-down"></i></span>
                     </div>
-                    <a>BRAND </a>
+                    <a href="./product.html">BRAND </a>
                     <ul class="submenu">
                         <li><a href="#">Orient</a></li>
                         <li><a href="#">Casio</a></li>
@@ -94,7 +94,7 @@
                 <li><a href="./index.html">HOME </a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li>
-                    <a>BRAND</a>
+                    <a href="./product.html">BRAND</a>
                     <ul class="submenu">
                         <li><a href="#">Orient</a></li>
                         <li><a href="#">Casio</a></li>
@@ -111,17 +111,14 @@
 
     <!--HEADER-->
 
-
-
-
     <!-- BREADCRUMB START -->
     <div class="bg-breadcrumb">
         <div class="container-breadcrumb ">
             <div class="breadcrumb-header">
-                <h2 class="breadcrumb-header__heading">REGISTER ACCOUNT</h2>
+                <h2 class="breadcrumb-header__heading">CONTACT</h2>
             </div>
             <div class="breadcrumb-link">
-                <p>HOME <span> / REGISTER ACCOUNT</span></p>
+                <p>HOME <span>/ CONTACT</span></p>
 
             </div>
             <div class="breadcrumb-filter">
@@ -166,55 +163,60 @@
     </div>
     <!-- BREADCRUMB END -->
 
-
-
-    <div class="container-register">
-        <div class="register-left">
-            <div class="register-left__img">
+    <div class="container-contact">
+        <div class="contact-left">
+            <div class="contact-left__background">
                 <img src="./asset/image/background/bg-form.jpg" alt="">
             </div>
-        </div>
-        <div class="register-right">
-            <div class="register-right__header">
-                <h1 class="register-right__header--heading">Welcome Back!</h1>
-                <p class="register-right__header--des">Please use the account you have been give to register!</p>
+            <div class="contact-left__social">
+                <a href="">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+
             </div>
-            <div class="register-right__form">
-                <form action="" method="post">
-                    <p class="warning">Complete Full Infomation, Please !</p>
-                    <div class="register-input">
-                        <label>Email</label>
-                        <input type="text" name="email">
+        </div>
+        <div class="contact-right">
+            <div class="contact-right__header">
+                <h2 class="contact-right__header--heading">
+                    Need Help ?
+                </h2>
+                <p class="contact-right__header--des">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugiat vel sapiente dicta ut officia labore voluptates, rerum aperiam quasi ullam hic illum, quas quidem accusamus deserunt commodi eum architecto.
+                </p>
+            </div>
+            <div class="contact-right__form">
+                <form action="">
+                    <div class="input-contact">
+                        <label class="contact-right__form--label">Name</label>
+                        <input type="text">
                     </div>
-                    <div class="register-input">
-                        <label>Password</label>
-                        <input type="password">
+                    <div class="input-contact">
+
+                        <label class="contact-right__form--label">Email</label>
+                        <input type="text">
                     </div>
-                    <div class="register-input">
-                        <label>Confirm Password</label>
-                        <input type="password" name="password">
-                    </div>
-                    <div class="register-input">
-                        <label>Address</label>
-                        <input type="text" name="address">
-                    </div>
-                    <div class="register-input">
-                        <label>Phone</label>
-                        <input type="text" name="phone">
-                    </div>
-                    <div class="register-select">
-                        <div class="remember">
-                            <input type="checkbox">
-                            <label for="">Remember me</label>
-                        </div>
-                        <a href="">Forgot password</a>
-                    </div>
-                    <div class="register-right__btn">
-                        <button type="submit">
-                            <a href="">REGISTER</a>
-                        </button>
+
+                    <div class="input-contact">
+                        <label class="contact-right__form--label">Want To Say Something else ?</label>
+                        <!-- <input type="text"> -->
+                        <textarea></textarea>
                     </div>
                 </form>
+                <div class="contact-right__btn">
+                    <button>
+                        <a href="">CONTACT</a>
+                    </button>
+                </div>
             </div>
 
         </div>
@@ -300,7 +302,7 @@
         </div>
         <div class="footer-btn">
             <button id="scroll-to-top">
-                <i class="far fa-caret-square-up"></i>
+                <i class="fas fa-angle-up"></i>
             </button>
         </div>
 
@@ -383,10 +385,6 @@
 
     </footer>
     <!-- FOOTER END -->
-
-
-
-
 
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>

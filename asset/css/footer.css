@@ -37,13 +37,13 @@
     background-color: transparent;
     color: white;
     cursor: pointer;
-    padding: 15px 20px;
-    border-radius: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 #scroll-to-top i {
     color: var(--bg-main);
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .container-footer-moblie {
