@@ -1,0 +1,74 @@
+﻿:root {
+    --bg-1-color: #ff4742;
+    --bg-sale: #cc6b04;
+    --main-color: #000000;
+    --text-name: #e76a6a;
+    --text-hover: #000000;
+    --button-buy: #dd3333;
+    --button-buy-hover: #8a2424e1;
+    --link-category: #da1818;
+    --product-social: rgb(136, 135, 135);
+    --update-cart: #f38383;
+    /* MAIN  */
+    --bg-main: #b10202;
+    --text-main: #979797;
+    --text-hover: #000;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    color: var(--bg-main);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+textarea {
+    font-size: 1.6rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.fa-facebook-square {
+    color: rgb(31, 130, 223);
+}
+
+.fa-twitter {
+    color: rgb(56, 101, 184);
+}
+
+.fa-instagram {
+    color: rgb(199, 136, 53);
+}
+
+.fa-youtube {
+    color: rgb(223, 68, 68);
+}
+
+#app,
+#header,
+#slider,
+#app-content,
+#footer {
+    position: relative;
+}
