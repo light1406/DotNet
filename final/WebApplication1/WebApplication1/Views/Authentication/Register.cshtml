@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HrefALinkHeader = "/Content/css/register.css";
+    ViewBag.RelALinkHeader = "stylesheet";
+}
+
+<!-- BREADCRUMB START -->
+<div class="bg-breadcrumb">
+    <div class="container-breadcrumb ">
+        <div class="breadcrumb-header">
+            <h2 class="breadcrumb-header__heading">REGISTER ACCOUNT</h2>
+        </div>
+        <div class="breadcrumb-link">
+            <p>HOME <span> / REGISTER ACCOUNT</span></p>
+
+        </div>
+        <div class="breadcrumb-filter">
+            <a class="js-show-filter">
+                <i class="fas fa-list"></i> SORT BY PRICE
+            </a>
+
+            <div class="modal">
+                <div class="filter-price">
+                    <ul class="list-price">
+                        <li class="list-price__item">
+                            <a href="">From $50 To $100</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $100 To $400</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $400 To $1000</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $1000 To $1500</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $1500 To $2500</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $2500 To $3000</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">Up $3000</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-btn">
+                    <button class="btn-exit">
+                        <a><i class="fas fa-times"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BREADCRUMB END -->
+
+
+
+<div class="container-register">
+    <div class="register-left">
+        <div class="register-left__img">
+            <img src="~/Content/image/background/bg-form.jpg" alt="">
+        </div>
+    </div>
+    <div class="register-right">
+        <div class="register-right__header">
+            <h1 class="register-right__header--heading">Welcome Back!</h1>
+            <p class="register-right__header--des">Please use the account you have been give to register!</p>
+        </div>
+        <div class="register-right__form">
+            <form action="" method="post">
+                <p class="warning">Complete Full Infomation, Please !</p>
+                <div class="register-input">
+                    <label>Email</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="register-input">
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+                <div class="register-input">
+                    <label>Confirm Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="register-input">
+                    <label>Address</label>
+                    <input type="text" name="address">
+                </div>
+                <div class="register-input">
+                    <label>Phone</label>
+                    <input type="text" name="phone">
+                </div>
+                <div class="register-select">
+                    <div class="remember">
+                        <input type="checkbox">
+                        <label for="">Remember me</label>
+                    </div>
+                    <a href="">Forgot password</a>
+                </div>
+                <div class="register-right__btn">
+                    <button type="submit">
+                        <a href="">REGISTER</a>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

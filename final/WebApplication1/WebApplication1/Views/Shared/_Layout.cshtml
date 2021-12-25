@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>HOME | CCKT</title>
 
     <!-- FONT AWESOME  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,24 +16,20 @@
 
     <!-- CSS  -->
     <link rel="stylesheet" href="~/Content/css/base.css">
-    <link rel="stylesheet" href="~/Content/css/header_chau.css">
+    <link rel="stylesheet" href="~/Content/css/headers.css">
     <link rel="stylesheet" href="~/Content/css/footer.css">
-    <link rel="stylesheet" href="~/Content/css/product.css">
-    <!-- <link rel="stylesheet" href="~/Content/css/responsive.css"> -->
-    <link rel="stylesheet" href="~/Content/css/indexChanh.css">
-    <link rel="stylesheet" href="@ViewBag.LinkCSSLogin">
+    <link rel="stylesheet" href="~/Content/css/products.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="shortcut icon" href="~/Content/image/icons/favicon.ico" type="image/x-icon" />
+    <link rel="@ViewBag.RelALinkHeader" href="@ViewBag.HrefALinkHeader" />
 
-    <!--JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
-    <!-- JS  -->
-    <script src="./Script/js/header.js"></script>
 
 </head>
 
 <body>
     <!--HEADER-->
     <div class="header">
+
         <div class="menu-mobile">
             <div class="close-menu-mobile">
                 <span><i class="fa fa-close"></i></span>
@@ -44,8 +40,8 @@
             </div>
             <hr />
             <ul class="p-menu">
-                <li><a href="./indexChanh.html">HOME </a></li>
-                <li><a href="./aboutChanh.html">ABOUT </a></li>
+                <li>@Html.ActionLink("Home", "Index", "Home", null, null)</li>
+                <li>@Html.ActionLink("About", "About", "Home", null, null)</li>
                 <li>
                     <div class="toggle-icon">
                         <span><i class="fa fa-angle-down"></i></span>
@@ -53,17 +49,14 @@
                     <a>BRAND </a>
                     <ul class="submenu">
                         <li><a href="#">Orient</a></li>
-                        <li><a href="#">Seiko</a></li>
                         <li><a href="#">Casio</a></li>
-                        <li><a href="#">Srwatch</a></li>
-                        <li><a href="#">Bentley</a></li>
-                        <li><a href="#">Op</a></li>
+                        <li><a href="#">Titan</a></li>
                         <li><a href="#">Citizen</a></li>
                     </ul>
                 </li>
-                <li><a href="./productChanh.html">WATCH MEN </a></li>
-                <li><a href="./productChanh.html">WATCH WOMEN </a></li>
-                <li><a href="./contactChanh.html">CONTACT</a></li>
+                <li>@Html.ActionLink("Watch Men", "Product", "Product", null, null)</li>
+                <li>@Html.ActionLink("Watch Women", "Product", "Product", null, null)</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home", null, null)</li>
             </ul>
         </div>
 
@@ -72,7 +65,7 @@
                 <a><i class="fa fa-bars"></i></a>
             </div>
             <div class="logo">
-                <a href="#"><img src="~/Content/image/logo.png" width="150" /></a>
+                <a href="/Home/Index"><img src="~/Content/image/logo.png" width="150" /></a>
             </div>
             <div class="search">
                 <input type="text" id="search-input" name="search-input" placeholder="Search">
@@ -83,13 +76,14 @@
                     <li class="user">
                         <a class="user-icon"><i class="fa fa-user"></i></a>
                         <ul class="btns-customer-submenu">
-                            <li>@Html.ActionLink("Login", "Login", "Login", null, null)</li>
-                            <li><a href="./register.html">Register</a></li>
-                            <li><a href="./forgotpassword.html">Log out</a></li>
+                            <li>@Html.ActionLink("Login", "Login", "Authentication", null, null)</li>
+                            <li>@Html.ActionLink("Info", "Login", "Authentication", null, null)</li>
+                            <li>@Html.ActionLink("Register", "Register", "Authentication", null, null)</li>
+                            <li>@Html.ActionLink("Log out", "ForgotPassword", "Authentication", null, null)</li>
                         </ul>
                     </li>
                     <li>
-                        <a href="./cartChanh.html" class="shop-cart">
+                        <a href="/Shopping/Cart" class="shop-cart">
                             <i class="fa fa-shopping-cart"></i>
                         </a>
                     </li>
@@ -98,26 +92,24 @@
         </div>
         <div class="menu">
             <ul class="p-menu">
-                <li>@Html.ActionLink("Home","Index","Home", null, null)</li>
-                <li><a href="./aboutChanh.html">ABOUT</a></li>
+                <li>@Html.ActionLink("Home", "Index", "Home", null, null)</li>
+                <li>@Html.ActionLink("About", "About", "Home", null, null)</li>
                 <li>
                     <a>BRAND</a>
                     <ul class="submenu">
                         <li><a href="#">Orient</a></li>
-                        <li><a href="#">Seiko</a></li>
                         <li><a href="#">Casio</a></li>
-                        <li><a href="#">Srwatch</a></li>
-                        <li><a href="#">Bentley</a></li>
-                        <li><a href="#">Op</a></li>
+                        <li><a href="#">Titan</a></li>
                         <li><a href="#">Citizen</a></li>
                     </ul>
                 </li>
-                <li><a href="./productChanh.html">WATCH MEN </a></li>
-                <li><a href="./productChanh.html">WATCH WOMEN </a></li>
-                <li><a href="./contactChanh.html">CONTACT</a></li>
+                <li>@Html.ActionLink("Watch Men", "Product", "Product", null, null)</li>
+                <li>@Html.ActionLink("Watch Women", "Product", "Product", null, null)</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home", null, null)</li>
             </ul>
         </div>
     </div>
+
     <!--HEADER-->
     <!-- render page html-->
 
@@ -125,7 +117,7 @@
 
     @RenderBody()
 
-   
+
 
 
 
@@ -133,6 +125,60 @@
     <footer>
         <div class="container-footer">
             <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">Infomation Store</h3>
+                    <li class="footer-item">
+                        <a href="">
+                            Address: Linh Trung Ward, Thu Duc, Ho Chi Minh City
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Website: https://galle.vn</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Fanpage: watchstore</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">Product</h3>
+                    <li class="footer-item">
+                        <a href="">Watch Men</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Watch Women</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Casio Watch</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Titan Watch</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <h3 class="footer-col__heading">My Account</h3>
+
+                    <li class="footer-item">
+                        <a href="">Login</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Register Account</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Forgot Password</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="">Shopping Cart</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+
                 <ul>
                     <h3 class="footer-col__heading">Contact</h3>
                     <li class="footer-item">
@@ -157,62 +203,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <ul>
-                    <h3 class="footer-col__heading">Product</h3>
-                    <li class="footer-item">
-                        <a href="">Watch Men</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="">Watch Women</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="">Watch Child</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="">Accessory</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <ul>
-                    <h3 class="footer-col__heading">My Account</h3>
-                    <li class="footer-item">
-                        <a href="">Login</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="">Register Account</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="">Forgot Password</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="">Shopping Cart</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <ul>
-                    <h3 class="footer-col__heading">Infomation Store</h3>
-                    <li class="footer-item">
-                        <a href="">
-                            Address: Linh Trung Ward, Thu Duc, Ho Chi Minh City
-                        </a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="">Website: https://galle.vn</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="">Fanpage: watchstore</a>
-                    </li>
-
-                </ul>
-            </div>
         </div>
         <div class="footer-btn">
             <button id="scroll-to-top">
-                <i class="far fa-caret-square-up"></i>
+                <i class="fas fa-angle-up"></i>
             </button>
         </div>
 
@@ -220,7 +214,7 @@
 
         <div class="container-footer-moblie">
             <div class="footer-col-moblie">
-                <h4 class="footer-col-moblie__heading">Contact</h4>
+                <h4 class="footer-col-moblie__heading">Infomation Store</h4>
                 <ul>
                     <li class="footer-item-moblie">
                         <a href="">+84 333 666 999</a>
@@ -235,22 +229,23 @@
                         <a href="">Intagram </a>
                     </li>
                 </ul>
+
             </div>
 
             <div class="footer-col-moblie">
                 <h4 class="footer-col-moblie__heading">Product</h4>
                 <ul>
                     <li class="footer-item-moblie">
-                        <a href="">+84 333 666 999</a>
+                        <a href="">Watch Men</a>
                     </li>
                     <li class="footer-item-moblie">
-                        <a href="">watchstore@gmail.com</a>
+                        <a href="">Watch Women</a>
                     </li>
                     <li class="footer-item-moblie">
-                        <a href="">Facebook </a>
+                        <a href="">Casio Watch</a>
                     </li>
                     <li class="footer-item-moblie">
-                        <a href="">Intagram </a>
+                        <a href="">Titan Watch</a>
                     </li>
                 </ul>
             </div>
@@ -259,22 +254,22 @@
                 <h4 class="footer-col-moblie__heading">My Account</h4>
                 <ul>
                     <li class="footer-item-moblie">
-                        <a href="">+84 333 666 999</a>
+                        <a href="">Login</a>
                     </li>
                     <li class="footer-item-moblie">
-                        <a href="">watchstore@gmail.com</a>
+                        <a href="">Register Account</a>
                     </li>
                     <li class="footer-item-moblie">
-                        <a href="">Facebook </a>
+                        <a href="">Forgot Password </a>
                     </li>
                     <li class="footer-item-moblie">
-                        <a href="">Intagram </a>
+                        <a href="">Shopping Cart </a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer-col-moblie">
-                <h4 class="footer-col-moblie__heading">Infomation Contact</h4>
+                <h4 class="footer-col-moblie__heading">Contact</h4>
                 <ul>
                     <li class="footer-item-moblie">
                         <a href="">+84 333 666 999</a>
@@ -294,6 +289,16 @@
 
     </footer>
     <!-- FOOTER END -->
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="~/Script/js/header.js"></script>
+    <script src="~/Script/js/slider.js"></script>
+    <script src="~/Script/js/scroll.js"></script>
+    <script src="@ViewBag.ScriptSrc"></script>
 </body>
 </html>

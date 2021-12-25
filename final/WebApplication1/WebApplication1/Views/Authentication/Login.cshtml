@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HrefALinkHeader = "/Content/css/login.css";
+    ViewBag.RelALinkHeader = "stylesheet";
+}
+
+
+<!-- BREADCRUMB START -->
+<div class="bg-breadcrumb">
+    <div class="container-breadcrumb ">
+        <div class="breadcrumb-header">
+            <h2 class="breadcrumb-header__heading">LOGIN ACCOUNT</h2>
+        </div>
+        <div class="breadcrumb-link">
+            <p>HOME <span> / LOGIN ACCOUNT</span></p>
+
+        </div>
+        <div class="breadcrumb-filter">
+            <a class="js-show-filter">
+                <i class="fas fa-list"></i> SORT BY PRICE
+            </a>
+
+            <div class="modal">
+                <div class="filter-price">
+                    <ul class="list-price">
+                        <li class="list-price__item">
+                            <a href="">From $50 To $100</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $100 To $400</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $400 To $1000</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $1000 To $1500</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $1500 To $2500</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">From $2500 To $3000</a>
+                        </li>
+                        <li class="list-price__item">
+                            <a href="">Up $3000</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-btn">
+                    <button class="btn-exit">
+                        <a><i class="fas fa-times"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BREADCRUMB END -->
+
+
+
+<div class="container-login">
+    <div class="login-left">
+        <div class="login-left__img">
+            <img src="~/Content/image/background/bg-form.jpg" alt="">
+        </div>
+    </div>
+    <div class="login-right">
+        <div class="login-right__header">
+            <h1 class="login-right__header--heading">Welcome Back!</h1>
+            <p class="login-right__header--des">Please use the account you have been give to login!</p>
+        </div>
+        <div class="login-right__form">
+            <form action="" method="post">
+                <p class="warning">Wrong Email Or Password</p>
+                <div class="login-input">
+                    <label>Email</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="login-input">
+                    <label>Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="login-select">
+                    <div class="remember">
+                        <input type="checkbox">
+                        <label for="">Remember me</label>
+                    </div>
+                    <a href="">Forgot password</a>
+                </div>
+                <div class="login-right__btn">
+                    <button type="submit">
+                        <a href="#">LOGIN</a>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

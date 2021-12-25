@@ -90,30 +90,60 @@
   <ItemGroup>
     <Content Include="Content\css\about.css" />
     <Content Include="Content\css\base.css" />
+    <Content Include="Content\css\cart.css" />
+    <Content Include="Content\css\checkout.css" />
+    <Content Include="Content\css\contact.css" />
     <Content Include="Content\css\footer.css" />
-    <Content Include="Content\css\header_chau.css" />
-    <Content Include="Content\css\indexChanh.css" />
-    <Content Include="Content\css\loginChanh.css" />
-    <Content Include="Content\css\product.css" />
-    <Content Include="Content\image\bg-01.jpg" />
-    <Content Include="Content\image\bg.jpg" />
+    <Content Include="Content\css\forgotpassword.css" />
+    <Content Include="Content\css\headers.css" />
+    <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\login.css" />
+    <Content Include="Content\css\products.css" />
+    <Content Include="Content\css\product_detail.css" />
+    <Content Include="Content\css\register.css" />
+    <Content Include="Content\image\background\bg-form.jpg" />
+    <Content Include="Content\image\banner\b1.jpg" />
+    <Content Include="Content\image\banner\b2.jpg" />
+    <Content Include="Content\image\banner\b3.jpg" />
+    <Content Include="Content\image\banner\b4.jpg" />
+    <Content Include="Content\image\banner\b5.jpg" />
+    <Content Include="Content\image\icons\favicon.ico" />
+    <Content Include="Content\image\icons\favicon.png" />
     <Content Include="Content\image\logo.png" />
-    <Content Include="Content\image\logo_casio.jpg" />
-    <Content Include="Content\image\logo_olym.jpg" />
-    <Content Include="Content\image\logo_orient.jpg" />
-    <Content Include="Content\image\logo_senko.jpg" />
-    <Content Include="Content\image\product\p1.png" />
-    <Content Include="Content\image\product\p2.png" />
-    <Content Include="Content\image\product\p3.png" />
-    <Content Include="Content\image\product\p4.png" />
+    <Content Include="Content\image\product\cckt01_1.jpg" />
+    <Content Include="Content\image\product\cckt01_2.jpg" />
+    <Content Include="Content\image\product\cckt01_3.jpg" />
+    <Content Include="Content\image\product\cckt01_4.jpg" />
+    <Content Include="Content\image\product\cckt01_5.jpg" />
+    <Content Include="Content\image\product\cckt03_1.jpg" />
+    <Content Include="Content\image\product\cckt03_2.jpg" />
+    <Content Include="Content\image\product\cckt03_3.jpg" />
+    <Content Include="Content\image\product\cckt03_4.jpg" />
+    <Content Include="Content\image\product\cckt03_5.jpg" />
+    <Content Include="Content\image\product\cckt06_1.jpg" />
+    <Content Include="Content\image\product\cckt06_2.jpg" />
+    <Content Include="Content\image\product\cckt06_3.jpg" />
+    <Content Include="Content\image\product\cckt06_4.jpg" />
+    <Content Include="Content\image\product\cckt06_5.jpg" />
+    <Content Include="Content\image\product\cckt27_1.jpg" />
+    <Content Include="Content\image\product\cckt27_2.jpg" />
+    <Content Include="Content\image\product\cckt27_3.jpg" />
+    <Content Include="Content\image\product\cckt27_4.jpg" />
+    <Content Include="Content\image\product\cckt27_5.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="Script\js\filter.js" />
+    <Content Include="Script\js\filterChanh.js" />
     <Content Include="Script\js\header.js" />
+    <Content Include="Script\js\scroll.js" />
+    <Content Include="Script\js\slider.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ShoppingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -125,7 +155,15 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Authentication\Login.cshtml" />
+    <Content Include="Views\Authentication\Register.cshtml" />
+    <Content Include="Views\Authentication\ForgotPassword.cshtml" />
+    <Content Include="Views\Product\Product.cshtml" />
+    <Content Include="Views\Product\Product_Detail.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Shopping\Cart.cshtml" />
+    <Content Include="Views\Shopping\Checkout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

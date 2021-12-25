@@ -1,26 +1,18 @@
-﻿:root {
-    --bg-1-color: #ff4742;
-    --bg-sale: #cc6b04;
-    --main-color: #000000;
-    --text-name: #e76a6a;
-    --text-hover: #000000;
-    --button-buy: #dd3333;
-    --button-buy-hover: #8a2424e1;
-    --link-category: #da1818;
-    --product-social: rgb(136, 135, 135);
-    --update-cart: #f38383;
-    /* MAIN  */
-    --bg-main: #b10202;
-    --text-main: #979797;
+:root {
+    --bg-main: #f6f0e5;
+    --text-main: #c7aa80;
     --text-hover: #000;
     --text-color: #ffffff;
+    --bg-pro: #f7f7f7;
+    --text-title: #875000;
+    --text-normal: #434343;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    color: var(--bg-main);
+    color: var(--text-title);
 }
 
 html {
@@ -33,7 +25,6 @@ html {
 
 a {
     text-decoration: none;
-    user-select: none;
 }
 
 li {
@@ -43,10 +34,16 @@ li {
 input,
 textarea {
     font-size: 1.6rem;
+    color: #000;
 }
 
 button {
     cursor: pointer;
+    background-color: var(--text-main) !important;
+}
+
+button a {
+    color: var(--bg-pro) !important;
 }
 
 .fa-facebook-square {
@@ -63,6 +60,22 @@ button {
 
 .fa-youtube {
     color: rgb(223, 68, 68);
+}
+
+p.warning {
+    background-color: rgba(233, 62, 62, 0.5);
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+::selection {
+    background-color: var(--text-title);
+    color: #ffffff;
 }
 
 #app,

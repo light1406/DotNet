@@ -1,0 +1,85 @@
+.container-register {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    font-size: 1.6rem;
+}
+
+.register-left {
+    width: 40%;
+    margin-top: 30px;
+}
+
+.register-left__img img {
+    width: 550px;
+    /* border: 1px solid red; */
+}
+
+.register-right__header--heading {
+    font-size: 3.2rem;
+}
+
+.register-right__header--des {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.register-input {
+    margin-bottom: 15px;
+}
+
+.register-input label {
+    display: block;
+}
+
+.register-input input {
+    width: 100%;
+    padding: 13px 10px;
+    border: 1px solid #dddddd;
+    outline-color: #dddddd;
+    border-radius: 5px;
+}
+
+.register-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-right__btn button {
+    width: 100%;
+    padding: 10px 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+
+/* MOBILE  */
+
+@media (max-width: 739px) {
+    .register-right {
+        width: 70%;
+    }
+}
+
+
+/*MOBLIE + TABLET*/
+
+@media (max-width: 1023px) {
+    .container-register {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .register-left {
+        display: none;
+    }
+    .register-right {
+        margin: auto;
+    }
+}

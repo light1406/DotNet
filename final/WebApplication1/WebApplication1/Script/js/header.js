@@ -1,10 +1,10 @@
-﻿$(document).ready(function () {
+$(document).ready(function () {
     $(".active-menu-mobile").click(function () {
-        $(".header .menu-mobile").css({ "left": "0" })
+        $(".header .menu-mobile").css({"left": "0"})
     })
 
     $(".header .menu-mobile .close-menu-mobile").click(function () {
-        $(".header .menu-mobile").css({ "left": "-400px" })
+        $(".header .menu-mobile").css({"left": "-400px"})
     })
 
     var toggle = false
@@ -21,5 +21,5 @@
 $(document).mouseup(function (e) {
     if (!$(".header .menu-mobile").is(e.target)
         && $(".header .menu-mobile").has(e.target).length === 0)
-        $(".header .menu-mobile").css({ "left": "-400px" })
+        $(".header .menu-mobile").css({"left": "-400px"})
 })
