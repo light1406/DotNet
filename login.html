@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/headers.css">
     <link rel="stylesheet" href="./asset/css/footer.css">
-    <link rel="stylesheet" href="./asset/css/products.css">
     <link rel="stylesheet" href="./asset/css/login.css">
     <link rel="shortcut icon" href="./asset/image/icons/favicon.ico" type="image/x-icon" />
 </head>
@@ -44,7 +43,7 @@
                     <div class="toggle-icon">
                         <span><i class="fa fa-angle-down"></i></span>
                     </div>
-                    <a>BRAND </a>
+                    <a href="/product.html">BRAND </a>
                     <ul class="submenu">
                         <li><a href="#">Orient</a></li>
                         <li><a href="#">Casio</a></li>
@@ -75,7 +74,7 @@
                         <a class="user-icon"><i class="fa fa-user"></i></a>
                         <ul class="btns-customer-submenu">
                             <li><a href="./login.html">Login</a></li>
-                            <li><a href="./login.html">Info</a></li>
+                            <li><a href="./personal.html">Personal Info</a></li>
                             <li><a href="./register.html">Register</a></li>
                             <li><a href="./forgotpassword.html">Log out</a></li>
                         </ul>
@@ -93,7 +92,7 @@
                 <li><a href="./index.html">HOME </a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li>
-                    <a>BRAND</a>
+                    <a href="/product.html">BRAND </a>
                     <ul class="submenu">
                         <li><a href="#">Orient</a></li>
                         <li><a href="#">Casio</a></li>
@@ -107,7 +106,6 @@
             </ul>
         </div>
     </div>
-
     <!--HEADER-->
 
 
@@ -183,11 +181,14 @@
                     <p class="warning">Wrong Email Or Password</p>
                     <div class="login-input">
                         <label>Email</label>
-                        <input type="text" name="email">
+                        <input type="text" name="email" id="email">
                     </div>
                     <div class="login-input">
                         <label>Password</label>
-                        <input type="password" name="password">
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="show_hide_password">
+                        <i class="far fa-eye" id="togglePassword"></i>
                     </div>
                     <div class="login-select">
                         <div class="remember">
@@ -379,6 +380,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="./asset/js/header.js"></script>
     <script src="./asset/js/scroll.js"></script>
+    <script>
+        var togglePassword = document.querySelector("#togglePassword");
+        var password = document.querySelector("#password");
+        console.log(togglePassword);
+
+        togglePassword.addEventListener("click", function(e) {
+            const type =
+                password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            this.classList.toggle("fa-eye-slash");
+        });
+    </script>
 
 </body>
 

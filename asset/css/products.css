@@ -23,9 +23,7 @@
 
 .breadcrumb-header__heading,
 .breadcrumb-link p,
-.breadcrumb-filter a {
-    /* padding-left: 20px; */
-}
+.breadcrumb-filter a {}
 
 .breadcrumb-filter a {
     cursor: pointer;
@@ -253,14 +251,6 @@
     .product-item {
         width: 45%;
     }
-    /* .product-item__sale-label {
-        --size: 35px;
-        width: var(--size);
-        height: var(--size);
-    } */
-    /* .product-item__sale-label--percent {
-        font-size: 1.4rem;
-    } */
 }
 
 @media (max-width: 739px) {

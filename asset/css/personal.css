@@ -1,0 +1,233 @@
+.container-personal {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 1.6rem;
+    margin-top: 50px;
+    scroll-behavior: smooth !important;
+}
+
+.menu-personal {
+    width: 25%;
+    height: 100%;
+    background-color: var(--text-main);
+}
+
+.menu-personal__list--item {
+    padding: 10px 30px;
+}
+
+.menu-personal__list--item:hover {
+    /* background-color: var(--text-title); */
+    cursor: pointer;
+}
+
+.menu-personal__list--item {
+    color: var(--text-color);
+}
+
+.profile-personal {
+    width: 70%;
+    padding: 0 100px;
+}
+
+.profile-personal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-personal__content {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.profile-personal__title {
+    width: 30%;
+}
+
+.select-gender {
+    display: flex;
+}
+
+.profile-personal__gender--male {
+    margin-right: 35px;
+}
+
+.profile-personal input[type="text"],
+.profile-personal input[type="date"],
+.profile-personal input[type="password"] {
+    width: 350px;
+    padding: 10px 5px;
+    border: 1px solid #dddddd;
+    outline-color: #dddddd;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.container-select {
+    display: flex;
+}
+
+.container-select div {
+    margin-right: 30px;
+}
+
+.profile-personal__birthday select {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    outline-color: #dddddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-personal__birthday select option {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    outline-color: #dddddd;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+.btn-personal button {
+    padding: 10px 35px;
+    border: 1px solid #dddddd;
+    outline-color: #dddddd;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.personal,
+.password {
+    margin-bottom: 30px;
+}
+
+.password div:nth-child(4) {
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.password div:nth-child(4) input {
+    margin-right: 10px;
+}
+
+.password a {
+    margin-right: 70px;
+}
+
+.container-order {
+    margin-bottom: 50px;
+}
+
+.container-order table tr .order-list__item {
+    width: 130%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: -100px;
+}
+
+.order-list__item img {
+    width: 50px;
+}
+
+.order-list {
+    display: flex;
+    width: 150%;
+    margin-left: -20%;
+}
+
+.order-list__title {
+    width: 20%;
+}
+
+.order-list__items {
+    width: 20%;
+    margin: 10px 0;
+}
+
+.order-list i {
+    color: red;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.order-list p:last-child {
+    padding-left: 5%;
+}
+
+
+/* MOBILE  */
+
+@media (max-width: 739px) {
+    *,
+    input {
+        font-size: 0.8rem;
+    }
+    .menu-personal__list--item {
+        padding: 10px 15px;
+    }
+    .menu-personal {
+        width: 20%;
+    }
+    .order-list__item img {
+        width: 40px;
+    }
+    .btn-personal button {
+        padding: 7px 22px;
+        font-size: 0.8rem;
+    }
+    .select-gender {
+        flex-direction: column;
+        margin-left: -30px;
+    }
+}
+
+
+/*MOBLIE + TABLET*/
+
+@media (max-width: 1023px) {
+    .order-list {
+        width: 100% !important;
+        margin-left: 0;
+    }
+    .container-personal {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 50px;
+        overflow-x: hidden;
+    }
+    .profile-personal {
+        width: 70%;
+        padding: 0 15px;
+    }
+    .profile-personal__content:first-child {
+        margin-top: 0;
+    }
+    .order-list__item {
+        width: 105%;
+        margin-left: -26px;
+    }
+    .order-list__item:first-child {
+        margin-top: 0;
+    }
+    .menu-personal {
+        margin-left: 20px;
+    }
+    .password a {
+        margin-right: 67px;
+    }
+    .password div:nth-child(4) {
+        margin-right: 8px;
+    }
+}

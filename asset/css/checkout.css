@@ -96,17 +96,18 @@
     .checkout-right {
         margin-bottom: 50px;
     }
-    @media (max-width: 739px) {
-        .checkout-left__header--heading,
-        .checkout-right__header--heading,
-        .checkout-right__bill--title span,
-        .checkout-right__bill--title span,
-        .checkout-left__header--heading,
-        .checkout-right__header--heading,
-        .checkout-right__bill--title span,
-        .checkout-left__form--input label,
-        .checkout-right__bill--btn button {
-            font-size: 1.4rem;
-        }
+}
+
+@media (max-width: 739px) {
+    .checkout-left__header--heading,
+    .checkout-right__header--heading,
+    .checkout-right__bill--title span,
+    .checkout-right__bill--title span,
+    .checkout-left__header--heading,
+    .checkout-right__header--heading,
+    .checkout-right__bill--title span,
+    .checkout-left__form--input label,
+    .checkout-right__bill--btn button {
+        font-size: 1.4rem;
     }
 }
