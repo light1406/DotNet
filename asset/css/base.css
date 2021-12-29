@@ -76,6 +76,22 @@ button a {
     cursor: pointer;
 }
 
+.fa-dolly-flatbed {
+    color: #ffafaf !important;
+}
+
+.fa-calendar-check {
+    color: #c3b091 !important;
+}
+
+.fa-vote-yea {
+    color: #5c7aea !important;
+}
+
+.fa-lock {
+    color: #84dfff !important;
+}
+
 p.warning {
     background-color: rgba(233, 62, 62, 0.5);
     padding: 10px;
@@ -98,6 +114,10 @@ p.warning {
 
 .hide {
     display: none !important;
+}
+
+.hide_v {
+    visibility: hidden !important;
 }
 
 .show {
