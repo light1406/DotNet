@@ -60,3 +60,13 @@ function showP() {
         }
     }
 }
+
+function choose(urlImgae) {
+    if (urlImgae.files && urlImgae.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $("#avatar").attr("src", e.target.result);
+        };
+        reader.readAsDataURL(urlImgae.files[0]);
+    }
+}
