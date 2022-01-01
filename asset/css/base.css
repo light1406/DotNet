@@ -6,12 +6,13 @@
     --bg-pro: #f7f7f7;
     --text-title: #875000;
     --text-normal: #434343;
+    --btn:#c7aa80;
+    --btn-hover: #875000;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
     color: var(--text-title);
 }
 
@@ -39,7 +40,12 @@ textarea {
 
 button {
     cursor: pointer;
-    background-color: var(--text-main) !important;
+    background-color: var(--btn);
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: var(--btn-hover);
 }
 
 button a {
