@@ -115,6 +115,19 @@
     color: var(--text-main);
 }
 
+.header .nav .btns-customer .user-avt{
+    display: block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.header .nav .btns-customer .user-avt:hover{
+    opacity: 0.8;
+}
+
 .header .menu>ul {
     display: flex;
     justify-content: center;

@@ -1,16 +1,17 @@
 .container-personal {
+    position: relative;
     width: 1100px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     margin: auto;
     font-size: 1.6rem;
     margin-top: 50px;
-    scroll-behavior: smooth !important;
 }
 
 .menu-personal {
     width: 25%;
-    height: 100%;
+    height: 284px;
     background-color: var(--text-main);
 }
 
@@ -26,7 +27,6 @@
     width: 80px;
     border-radius: 50%;
     display: block;
-    vertical-align: middle;
     cursor: pointer;
 }
 
@@ -39,7 +39,6 @@
 }
 
 .menu-personal__list--item:hover {
-    /* background-color: var(--text-title); */
     cursor: pointer;
 }
 
@@ -144,47 +143,18 @@
 }
 
 .container-order {
-    margin-bottom: 50px;
+    position: absolute;
+    
 }
 
-.container-order table tr .order-list__item {
-    width: 130%;
+.container-order .order-title{
+    border: 2px solid #000000;
+
+}
+
+.container-order .order-list{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
-    margin-left: -100px;
 }
-
-.order-list__item img {
-    width: 50px;
-}
-
-.order-list {
-    display: flex;
-    width: 150%;
-    margin-left: -20%;
-}
-
-.order-list__title {
-    width: 20%;
-}
-
-.order-list__items {
-    width: 20%;
-    margin: 10px 0;
-}
-
-.order-list i {
-    color: red;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
-.order-list p:last-child {
-    padding-left: 5%;
-}
-
 
 /* MOBILE  */
 
