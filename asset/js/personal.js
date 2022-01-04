@@ -1,72 +1,18 @@
-window.addEventListener("load", function() {
-    $(".address").hide();
-    $(".password").hide();
-    $(".container-order").hide();
+$(document).ready(function (){
+    function activeTab(obj){
+        $('.contain .nav .menu ul li a').removeClass('active');
 
-    $(".profile-js").click(function() {
-        $(".personal").show();
-        $(".address").hide();
-        $(".password").hide();
-        $(".container-order").hide();
+        $(obj).addClass('active');
 
-        $(".profile-js").addClass("active-menu");
-        $(".address-js").removeClass("active-menu");
-        $(".order-js").removeClass("active-menu");
-        $(".password-js").removeClass("active-menu");
-    });
-    $(".address-js").click(function() {
-        $(".address").show();
-        $(".personal").hide();
-        $(".password").hide();
-        $(".container-order").hide();
+        var id = $(obj).attr('href');
 
-        $(".address-js").addClass("active-menu");
-        $(".address-js").removeClass("hide");
-        $(".profile-js").removeClass("active-menu");
-        $(".password-js").removeClass("active-menu");
-        $(".order-js").removeClass("active-menu");
-    });
-    $(".password-js").click(function() {
-        $(".password").show();
-        $(".personal").hide();
-        $(".address").hide();
-        $(".container-order").hide();
+        $('.tab-item').hide();
 
-        $(".password-js").addClass("active-menu");
-        $(".profile-js").removeClass("active-menu");
-        $(".address-js").removeClass("active-menu");
-        $(".order-js").removeClass("active-menu");
-    });
-    $(".order-js").click(function() {
-        $(".container-order").show();
-        $(".personal").hide();
-        $(".address").hide();
-        $(".password").hide();
-
-        $(".order-js").addClass("active-menu");
-        $(".profile-js").removeClass("active-menu");
-        $(".address-js").removeClass("active-menu");
-        $(".password-js").removeClass("active-menu");
-    });
-});
-
-function showP() {
-    var sps = document.querySelectorAll("#show-password");
-    for (let index = 0; index < sps.length; index++) {
-        if (sps[index].type == "password") {
-            sps[index].type = "text";
-        } else {
-            sps[index].type = "password";
-        }
+        $(id).show();
     }
-}
 
-function choose(urlImgae) {
-    if (urlImgae.files && urlImgae.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            $("#avatar").attr("src", e.target.result);
-        };
-        reader.readAsDataURL(urlImgae.files[0]);
-    }
-}
+    $('.contain .nav .menu ul li a').click(function(){
+        activeTab(this);
+    });
+    activeTab($('.contain .nav .menu ul li:first-child a'));
+})

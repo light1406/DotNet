@@ -1,223 +1,142 @@
-.container-personal {
-    position: relative;
-    width: 1100px;
+.contain{
+    width: 1060px;
     height: 500px;
-    display: flex;
-    justify-content: space-between;
     margin: auto;
-    font-size: 1.6rem;
-    margin-top: 50px;
-}
-
-.menu-personal {
-    width: 25%;
-    height: 284px;
-    background-color: var(--text-main);
-}
-
-.avt {
-    background-color: white;
-    height: 100px;
+    padding-top: 35px;
     display: flex;
-    margin: auto;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.avt label img {
-    width: 80px;
-    border-radius: 50%;
-    display: block;
-    cursor: pointer;
+.contain *{
+    font-size: 16px;
 }
 
-.avt input {
-    display: none;
-}
-
-.menu-personal__list--item {
-    padding: 10px 30px;
-}
-
-.menu-personal__list--item:hover {
-    cursor: pointer;
-}
-
-.menu-personal__list--item {
-    color: var(--text-color);
-}
-
-.profile-personal {
-    width: 70%;
-    padding: 0 100px;
-}
-
-.profile-personal form {
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-personal__content {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
-}
-
-.profile-personal__title {
-    width: 30%;
-}
-
-.select-gender {
-    display: flex;
-}
-
-.profile-personal__gender--male {
-    margin-right: 35px;
-}
-
-.profile-personal input[type="text"],
-.profile-personal input[type="date"],
-.profile-personal input[type="password"] {
-    width: 350px;
-    padding: 10px 5px;
-    border: 1px solid #dddddd;
-    outline-color: #dddddd;
-    border-radius: 5px;
-    word-wrap: break-word;
-}
-
-.container-select {
-    display: flex;
-}
-
-.container-select div {
-    margin-right: 30px;
-}
-
-.profile-personal__birthday select {
-    width: 80px;
-    height: 40px;
-    border: 1px solid #dddddd;
-    outline-color: #dddddd;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.profile-personal__birthday select option {
-    width: 80px;
-    height: 40px;
-    border: 1px solid #dddddd;
-    outline-color: #dddddd;
-    border-radius: 5px;
-    font-size: 1.6rem;
-}
-
-.btn-personal button {
-    padding: 10px 35px;
-    border: 1px solid #dddddd;
-    outline-color: #dddddd;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.3px;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.personal,
-.password {
+.title{
     margin-bottom: 30px;
 }
 
-.password div:nth-child(4) {
-    justify-content: flex-end;
-    margin-right: 50px;
+.title span{
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.password div:nth-child(4) input {
-    margin-right: 10px;
+/*form*/
+.contain .tab-content .tab-item .form-item{
+    padding: 20px;
 }
 
-.password a {
-    margin-right: 70px;
+label{
+    margin-right: 12px;
 }
 
-.container-order {
-    position: absolute;
-    
+input[type="text"],
+input[type="password"]{
+    display: block;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid var(--text-main);
 }
 
-.container-order .order-title{
-    border: 2px solid #000000;
-
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0px 2px 4px 2px #f1ae52;
 }
 
-.container-order .order-list{
+input[type="date"]{
+    padding: 5px;
+    font-size: 20px;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: var(--text-main);
+    cursor: pointer;
+    margin-left: 60%;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+/*NAV*/
+.contain .nav{
+    width: 25%;
+    margin-right: 100px;
+}
+
+.contain .nav .user{
+    width: 100%;
+    height: 100px;
     display: flex;
 }
 
-/* MOBILE  */
-
-@media (max-width: 739px) {
-    *,
-    input {
-        font-size: 0.8rem;
-    }
-    .menu-personal__list--item {
-        padding: 10px 15px;
-    }
-    .menu-personal {
-        width: 20%;
-    }
-    .order-list__item img {
-        width: 40px;
-    }
-    .btn-personal button {
-        padding: 7px 22px;
-        font-size: 0.8rem;
-    }
-    .select-gender {
-        flex-direction: column;
-        margin-left: -30px;
-    }
+.contain .nav .user .avt{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
 }
 
 
-/*MOBLIE + TABLET*/
-
-@media (max-width: 1023px) {
-    .order-list {
-        width: 100% !important;
-        margin-left: 0;
-    }
-    .container-personal {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        margin-top: 50px;
-        overflow-x: hidden;
-    }
-    .profile-personal {
-        width: 70%;
-        padding: 0 15px;
-    }
-    .profile-personal__content:first-child {
-        margin-top: 0;
-    }
-    .order-list__item {
-        width: 105%;
-        margin-left: -26px;
-    }
-    .order-list__item:first-child {
-        margin-top: 0;
-    }
-    .menu-personal {
-        margin-left: 20px;
-    }
-    .password a {
-        margin-right: 67px;
-    }
-    .password div:nth-child(4) {
-        margin-right: 8px;
-    }
+.contain .nav .user .nickname{
+    padding-top: 20px;
 }
+
+.contain .menu li .active{
+    color: var(--text-main);
+    background-color: var(--text-title);
+}
+
+.contain .menu li:hover a{
+    color: var(--text-main);
+    background-color: var(--text-title);
+}
+
+.contain .menu a{
+    display: block;
+    width: 100%;
+    background-color: var(--text-main);
+    padding: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+/*info*/
+.contain .tab-content{
+    width: 60%;
+}
+
+.contain .tab-content .tab-item{
+    padding-left: 20px;
+}
+
+/*order*/
+table{
+    width: 100%;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+}
+
+th,td{
+    width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+thead{
+    display: block;
+}
+
+tbody{
+    display: block;
+    overflow: auto;
+    max-height: 350px;
+}
+
+/*change password*/
