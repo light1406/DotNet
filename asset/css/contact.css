@@ -16,7 +16,6 @@
     display: flex;
     margin: auto;
     justify-content: space-evenly;
-    margin-top: 85px;
 }
 
 .contact-left__social i {
@@ -32,7 +31,7 @@
     font-size: 1.6rem;
     line-height: 2.8rem;
     margin-bottom: 30px;
-    color: var(--text-normal);
+    color: var(--gray);
 }
 
 .contact-right__form--label {
@@ -75,10 +74,6 @@
     font-weight: bold;
     border: 1px solid #dddddd;
     border-radius: 10px;
-}
-
-.contact-right__btn button a {
-    color: var(--bg-pro);
 }
 
 @media (max-width: 1023px) {

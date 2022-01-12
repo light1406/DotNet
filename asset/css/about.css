@@ -13,8 +13,7 @@
 .about-text__paragraph {
     font-size: 1.6rem;
     line-height: 3rem;
-    color: var(--text-normal);
-    margin-bottom: 5px;
+    color: var(--black);
     text-align: justify;
     margin: 0 30px;
 }

@@ -34,7 +34,7 @@ input[type="password"]{
     display: block;
     width: 60%;
     padding: 10px;
-    border: 1px solid var(--text-main);
+    border: 1px solid var(--western-yellow);
 }
 
 input[type="text"]:focus{
@@ -49,11 +49,18 @@ input[type="date"]{
 
 input[type="submit"]{
     border: none;
-    background-color: var(--text-main);
+    background-color: var(--western-yellow);
     cursor: pointer;
     margin-left: 60%;
     padding: 10px 25px;
     border-radius: 5px;
+    color: var(--white);
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--dark-yellow);
 }
 
 /*NAV*/
@@ -83,19 +90,18 @@ input[type="submit"]{
 }
 
 .contain .menu li .active{
-    color: var(--text-main);
-    background-color: var(--text-title);
+    color: var(--lite-yellow);
+    background-color: var(--dark-yellow);
 }
 
 .contain .menu li:hover a{
-    color: var(--text-main);
-    background-color: var(--text-title);
+    background-color: var(--lite-western-yellow);
 }
 
 .contain .menu a{
     display: block;
     width: 100%;
-    background-color: var(--text-main);
+    background-color: var(--western-yellow);
     padding: 12px;
     font-size: 18px;
     color: #ffffff;
@@ -119,7 +125,7 @@ table{
 tr:nth-child(even) {background-color: #f2f2f2;}
 
 th {
-    background-color: #04AA6D;
+    background-color: var(--western-yellow);
     color: white;
 }
 
@@ -127,6 +133,10 @@ th,td{
     width: 100px;
     padding: 10px 20px;
     text-align: center;
+}
+
+td a:hover{
+    color: var(--dark-yellow);
 }
 
 thead{

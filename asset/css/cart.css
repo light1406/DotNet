@@ -16,7 +16,7 @@
 }
 
 .cart-list__item:last-child {
-    border-bottom: 1px solid var(--bg-main);
+    border-bottom: 1px solid var(--western-yellow);
 }
 
 .cart-list__item--img {

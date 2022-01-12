@@ -1,0 +1,35 @@
+#products{
+    width: 1100px;
+    margin: auto;
+}
+
+.list-product {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.btns{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.btns .load-more{
+    padding: 10px 25px;
+    border: none;
+}
+
+.btns .load-more span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+@media (max-width: 1100px) {
+    #products{
+        width: 100%;
+    }
+}

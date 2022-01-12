@@ -1,8 +1,12 @@
-.container-details {
+#product-detail{
     width: 1100px;
+    margin: auto;
+    padding: 50px;
+}
+
+.container-details {
     display: flex;
     justify-content: space-between;
-    margin: 50px auto;
 }
 
 .details-left {
@@ -20,11 +24,11 @@
     width: 100px;
 }
 
-
 /* RIGHT  */
 
 .details-right__header--name-product {
     font-size: 2.8rem;
+    color: var(--dark-gray);
 }
 
 .details-right__header--des {
@@ -32,18 +36,18 @@
     text-align: left;
     margin-bottom: 30px;
     margin-top: 15px;
+    color: var(--gray);
 }
 
 .details-right__price-social {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
     border-bottom: 1px solid #000;
 }
 
 .details-right__price-old {
     font-size: 2.8rem;
-    color: var(--text-main);
+    color: var(--gray);
     text-decoration: line-through;
 }
 
@@ -61,14 +65,16 @@
 
 .details-right__quantity {
     border-bottom: 1px solid #000;
+    padding: 20px;
 }
 
-.details-right__quantity input {
-    padding: 10px 5px;
-    border: 1px solid #dddddd;
-    outline-color: #dddddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.details-right__quantity input[type="number"] {
+    padding: 5px 0;
+    font-size: 1.5rem;
+}
+
+.details-right__quantity input[type="number"]:focus{
+    outline: none;
 }
 
 .details-right__policy {
@@ -83,23 +89,23 @@
 
 .details-right__policy div i {
     font-size: 2.8rem;
-    color: var(--text-main);
+    color: var(--western-yellow);
 }
 
 .details-right__policy--text {
     font-size: 1.3rem;
-    color: var(--text-title);
+    color: var(--gray);
 }
 
 .details-right__btn button {
     margin-top: 30px;
     width: 100%;
-    padding: 10px 50px;
     border: 1px solid #dddddd;
     outline-color: #dddddd;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     cursor: pointer;
+    padding: 10px 0;
 }
 
 .container-info {
@@ -112,6 +118,7 @@
 .info-header__heading {
     font-weight: bold;
     font-size: 2.5rem;
+    color: var(--dark-gray);
 }
 
 .insurance-info {
@@ -119,6 +126,10 @@
     justify-content: space-between;
     margin: 10px 0;
     border-top: 1px solid #dddddd;
+}
+
+.insurance-info p{
+    color: gray;
 }
 
 .insurance-info:last-child {
@@ -138,20 +149,12 @@
     line-height: 3.6rem;
 }
 
-.similar-product {
-    width: 1100px;
-    max-width: 100%;
-    margin: 50px auto;
-}
-
-.similar-product__heading {
-    font-size: 2.8rem;
-    margin-left: 30px;
-}
-
 @media (max-width: 1023px) {
-    .container-details {
+    #product-detail{
         width: 100%;
+        padding: 0;
+    }
+    .container-details {
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -182,9 +185,6 @@
     .info-left,
     .info-right {
         margin: 0 30px;
-    }
-    .similar-product {
-        /* margin: 0 30px; */
     }
 }
 

@@ -18,7 +18,7 @@
 .slick-prev i,
 .slick-next i {
     font-size: 1.8rem;
-    color: var(--bg-main);
+    color: var(--western-yellow);
 }
 
 .slick-prev {
@@ -26,7 +26,7 @@
     top: 50%;
     left: -10px;
     transform: translateY(-50%);
-    background-color: var(--text-main);
+    background-color: var(--lite-gray);
     border: none;
     z-index: 2;
     padding: 12px 18px;
@@ -38,7 +38,7 @@
     top: 50%;
     right: -10px;
     transform: translateY(-50%);
-    background-color: var(--text-main);
+    background-color: var(--lite-gray);
     border: none;
     z-index: 2;
     padding: 12px 18px;

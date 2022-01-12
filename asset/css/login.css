@@ -13,7 +13,6 @@
 
 .login-left__img img {
     width: 550px;
-    /* border: 1px solid red; */
 }
 
 .login-right {
@@ -38,7 +37,7 @@
 }
 
 .login-input input {
-    width: 100%;
+    width: 95%;
     padding: 13px 10px;
     border: 1px solid #dddddd;
     outline-color: #dddddd;
@@ -79,7 +78,6 @@
     letter-spacing: 2px;
     border: 1px solid #dddddd;
 }
-
 
 /* MOBILE  */
 

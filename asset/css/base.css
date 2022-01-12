@@ -1,55 +1,59 @@
 :root {
-    --bg-main: #f6f0e5;
-    --text-main: #c7aa80;
-    --text-hover: #000;
-    --text-color: #ffffff;
-    --bg-pro: #f7f7f7;
-    --text-title: #875000;
-    --text-normal: #434343;
-    --btn:#c7aa80;
-    --btn-hover: #875000;
+    --western-yellow: #c7aa80;
+    --lite-western-yellow: #d0bfa5;
+    --dark-western-yellow: #d08451;
+    --lite-yellow: #ffcb91;
+    --dark-yellow: #b96f00;
+
+    --white: #ffff;
+    --lite-gray: #f7f7f7;
+    --gray: #b7b7b7;
+    --dark-gray: #606060;
+
+    --black: #000000;
 }
 
 * {
     margin: 0;
     padding: 0;
-    color: var(--text-title);
+    font-family: "Poppins", sans-serif;
 }
 
-html {
+html{
     font-size: 62.5%;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.6;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
+    color: var(--western-yellow);
 }
 
 li {
     list-style: none;
 }
 
+input[type="number"]{
+    text-align: center;
+}
+
 input,
 textarea {
     font-size: 1.6rem;
-    color: #000;
+    color: var(--black);
 }
 
 button {
     cursor: pointer;
-    background-color: var(--btn);
+    background-color: var(--western-yellow);
     transition: 0.4s;
 }
 
 button:hover{
-    background-color: var(--btn-hover);
+    background-color: var(--dark-yellow);
 }
 
 button a {
-    color: var(--bg-pro) !important;
+    color: var(--white);
 }
 
 .fa-facebook-square {
@@ -110,12 +114,12 @@ p.warning {
 }
 
 ::selection {
-    background-color: var(--text-title);
+    background-color: var(--dark-yellow);
     color: #ffffff;
 }
 
 .active-menu {
-    background-color: var(--text-title) !important;
+    background-color: var(--dark-yellow) !important;
 }
 
 .hide {

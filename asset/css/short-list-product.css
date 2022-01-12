@@ -1,0 +1,23 @@
+.short-list-product{
+    width: 100%;
+}
+
+.short-list-product .header .title{
+    float: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.short-list-product .header .btns{
+    float: right;
+    font-size: 2.0rem;
+
+}
+
+.short-list-product .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

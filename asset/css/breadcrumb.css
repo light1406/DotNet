@@ -1,7 +1,7 @@
 /* BREADCRUMB  */
 
 .bg-breadcrumb {
-    background-color: var(--text-main);
+    background-color: var(--western-yellow);
     z-index: -1;
 }
 
@@ -9,6 +9,7 @@
     width: 1100px;
     max-width: 100%;
     margin: 0 auto;
+    padding: 10px 0;
 }
 
 .breadcrumb-filter a,
@@ -19,7 +20,8 @@
     color: white;
     font-size: 1.8rem;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: relative;
 }
 
@@ -69,7 +71,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--text-main);
+    background-color: var(--western-yellow);
 }
 
 .list-price__item {
@@ -79,7 +81,7 @@
 }
 
 .list-price__item:hover {
-    background-color: var(--text-title);
+    background-color: var(--dark-yellow);
     cursor: pointer;
 }
 

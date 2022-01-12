@@ -13,7 +13,6 @@
 
 .register-left__img img {
     width: 550px;
-    /* border: 1px solid red; */
 }
 
 .register-right__header--heading {
@@ -34,16 +33,15 @@
 }
 
 .register-input input {
-    width: 100%;
+    width: 95%;
     padding: 13px 10px;
     border: 1px solid #dddddd;
     outline-color: #dddddd;
     border-radius: 5px;
 }
 
-.register-select {
-    display: flex;
-    justify-content: space-between;
+.register-select a {
+    float: right;
 }
 
 .register-right__btn button {
@@ -66,7 +64,6 @@
     }
 }
 
-
 /*MOBLIE + TABLET*/
 
 @media (max-width: 1023px) {
@@ -76,9 +73,11 @@
         padding: 0px;
         overflow-x: hidden;
     }
+
     .register-left {
         display: none;
     }
+
     .register-right {
         margin: auto;
     }
