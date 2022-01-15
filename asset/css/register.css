@@ -40,6 +40,15 @@
     border-radius: 5px;
 }
 
+.register-input select {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 13px 10px;
+    border: 1px solid #dddddd;
+    outline-color: #dddddd;
+    border-radius: 5px;
+}
+
 .register-select a {
     float: right;
 }
@@ -53,6 +62,7 @@
     letter-spacing: 2px;
     border: 1px solid #dddddd;
     cursor: pointer;
+    color: white;
 }
 
 
@@ -64,6 +74,7 @@
     }
 }
 
+
 /*MOBLIE + TABLET*/
 
 @media (max-width: 1023px) {
@@ -73,11 +84,9 @@
         padding: 0px;
         overflow-x: hidden;
     }
-
     .register-left {
         display: none;
     }
-
     .register-right {
         margin: auto;
     }
